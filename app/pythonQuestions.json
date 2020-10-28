@@ -1,0 +1,769 @@
+[
+    {
+      "id": "1",  
+      "category" : "Variable Names",
+        "instruction" : "Is Python case sensitive when dealing with identifiers?" ,
+        "expression" : "" ,
+        "correct" : "yes",
+        "incorrect" : [
+           "no",
+           "machine dependent",
+           "none of the mentioned"
+        ],
+        
+        "Explanation" : "Case is always significant."
+        
+    },
+
+    {
+      "id": "2",  
+      "category" : "Variable Names",
+        "instruction" : " What is the maximum possible length of an identifier?" ,
+        "expression" : "" ,
+        "correct": "none of the mentioned",
+        "incorrect" : [
+           " 31 characters",
+           " 63 characters",
+           "79 characters"
+        ],
+       "Explanation" : " Identifiers can be of any length."
+        
+    },
+
+    {
+      "id": "3",  
+      "category" : "Variable Names",
+        "instruction" : "Which of the following is invalid?" ,
+        "expression" : "" ,
+        "correct": "none of the mentioned",
+        "incorrect" : [
+           "_a = 1",
+           " __a = 1",
+           " __str__ = 1"
+        ],
+       "Explanation" : "All the statements will execute successfully but at the cost of reduced readability."
+          },
+
+    {
+      "id": "4",  
+      "category" : "Variable Names",
+        "instruction" : " Which of the following is an invalid variable?" ,
+        "expression" : "" ,
+        "correct": "1st_string",
+        "incorrect" : [
+           " my_string_1",
+           "foo",
+           " _"
+        ],
+       "Explanation" : " Variable names should not start with a number."
+        
+    },
+
+    {
+      "id": "5",  
+      "category" : "Variable Names",
+        "instruction" : "Why are local variable names beginning with an underscore discouraged?" ,
+        "expression" : "" ,
+        "correct": "they are used to indicate a private variables of a class",
+        "incorrect" : [
+           " they confuse the interpreter",
+           " they are used to indicate global variables",
+           " they slow down execution"
+        ],
+       "Explanation" : " As Python has no concept of private variables, leading underscores are used to indicate variables that must not be accessed from outside the class."
+        
+    },
+
+    {
+      "id": "6",  
+      "category" : "Variable Names",
+        "instruction" : " Which of the following is not a keyword?" ,
+        "expression" : "" ,
+        "correct": "eval",
+        "incorrect" : [
+           " assert",
+           "nonlocal",
+           "pass"
+        ],
+       "Explanation" : "eval can be used as a variable."
+        
+    },
+
+    {
+      "id": "7",  
+      "category" : "Variable Names",
+        "instruction" : "All keywords in Python are in _________" ,
+        "expression" : "" ,
+        "correct": " None of the mentioned",
+        "incorrect" : [
+           " lower case",
+           " UPPER CASE",
+           "Capitalized"
+        ],
+       "Explanation" : "True, False and None are capitalized while the others are in lower case."
+        
+    },
+
+    {
+      "id": "8",  
+      "category" : "Variable Names",
+        "instruction" : " Which of the following is true for variable names in Python?" ,
+        "expression" : "" ,
+        "correct": " unlimited length",
+        "incorrect" : [
+           " all private members must have leading and trailing underscores",
+           "underscore and ampersand are the only two special characters allowed",
+           " none of the mentioned"
+        ],
+       "Explanation" : " Variable names can be of any length."
+        
+    },
+
+    {
+      "id": "9",  
+      "category" : "Variable Names",
+        "instruction" : "Which of the following is an invalid statement?" ,
+        "expression" : "" ,
+        "correct": "a b c = 1000 2000 3000",
+        "incorrect" : [
+           " abc = 1,000,000",
+           "a,b,c = 1000, 2000, 3000",
+           " a_b_c = 1,000,000"
+        ],
+       "Explanation" : "Spaces are not allowed in variable names."
+        
+    },
+
+    {
+      "id": "10",  
+      "category" : "Variable Names",
+        "instruction" : " Which of the following cannot be a variable?" ,
+        "expression" : "" ,
+        "correct": " in",
+        "incorrect" : [
+           "__init__",
+           "it",
+           "on"
+        ],
+       "Explanation" : "in is a keyword."
+        
+    },
+
+    {
+      "id": "11",  
+      "category" : " Basic Operators",
+        "instruction" : "Which is the correct operator for power(xy)?" ,
+        "expression" : "" ,
+        "correct": " X**y",
+        "incorrect" : [
+           " X^y",
+           " X^^y",
+           " None of the mentioned"
+        ],
+       "Explanation" : " In python, power operator is x**y i.e. 2**3=8."
+        
+    },
+
+    {
+        "id": "12",  
+        "category" : " Basic Operators",
+        "instruction" : "Which one of these is floor division?" ,
+        "expression" : "" ,
+        "correct": " //",
+        "incorrect" : [
+           "/",
+           " %",
+           "None of the mentioned"
+           
+        ],
+       "Explanation" : "When both of the operands are integer then python chops out the fraction part and gives you the round off value, to get the accurate answer use floor division. This is floor division. For ex, 5/2 = 2.5 but both of the operands are integer so answer of this expression in python is 2. To get the 2.5 answer, use floor division."
+        
+    },
+
+    {   "id":"13",
+        "category" : " Basic Operators",
+        "instruction" : "What is the order of precedence in python?" ,
+        "expression" : "i)Parentheses   ii) Exponential  iii) Multiplication   iv) Division  v) Addition  vi) Subtraction" ,
+        "correct": "i,ii,iii,iv,v,vi",
+        "incorrect" : [
+           "ii,i,iii,iv,v,vi",
+           " ii,i,iv,iii,v,vi",
+           "i,ii,iii,iv,vi,v"
+           
+        ],
+       "Explanation" : "For order of precedence, just remember this PEMDAS (similar to BODMAS)."
+        
+    },
+
+    {
+      "id":"14",
+      "category" : " Basic Operators",
+      "instruction" : "What is the answer to this expression, 22 % 3 is?" ,
+        "expression" : "" ,
+        "correct": " 1",
+        "incorrect" : [
+           " 7",
+           " 0",
+           " 5"
+           
+        ],
+       "Explanation" : " Modulus operator gives the remainder. So, 22%3 gives the remainder, that is, 1."
+        
+    },
+
+    {
+      "id":"15",
+      "category" : " Basic Operators",
+       "instruction" : "Mathematical operations can be performed on a string." ,
+        "expression" : "" ,
+        "correct": " False",
+        "incorrect" : [
+           " True",
+           "",
+           "",
+           ""
+        ],
+       "Explanation" : " You can’t perform mathematical operation on string even if the string is in the form: ‘1234…’."
+        
+    },
+
+    {
+      "id":"16",
+      "category" : " Basic Operators",
+      "instruction" : "Operators with the same precedence are evaluated in which manner?" ,
+        "expression" : "" ,
+        "correct": "Left to Right",
+        "incorrect" : [
+           "Right to Left",
+           "Can’t say",
+           "None of the mentioned"
+           
+        ],
+       "Explanation" : "None."
+        
+    },
+
+    {
+      "id":"17",
+      "category" : " Basic Operators",
+      "instruction" : "What is the output of this expression, 3*1**3?" ,
+        "expression" : "" ,
+        "correct": "3",
+        "incorrect" : [
+           "27",
+           "9",
+           " 1"
+           
+        ],
+       "Explanation" : "First this expression will solve 1**3 because exponential has higher precedence than multiplication, so 1**3 = 1 and 3*1 = 3. Final answer is 3."
+        
+    },
+
+    {
+      "id":"18",
+      "category" : " Basic Operators",
+      "instruction" : "Which one of the following has the same precedence level?" ,
+        "expression" : "" ,
+        "correct": " Addition and Subtraction",
+        "incorrect" : [
+           "Multiplication, Division and Addition",
+           "Multiplication, Division, Addition and Subtraction",
+           " Addition and Multiplication",
+           ""
+        ],
+       "Explanation" : "“Addition and Subtraction” are at the same precedence level. Similarly, “Multiplication and Division” are at the same precedence level. However, Multiplication and Division operators are at a higher precedence level than Addition and Subtraction operators."
+        
+    },
+
+    {
+      "id":"19",
+      "category" : " Basic Operators",
+      "instruction" : "he expression Int(x) implies that the variable x is converted to integer." ,
+        "expression" : "" ,
+        "correct": "True",
+        "incorrect" : [
+           " False"
+           
+        ],
+       "Explanation" : "None."
+        
+    },
+
+    {
+      "id":"20",
+      "category" : " Basic Operators",
+      "instruction" : "Which one of the following has the highest precedence in the expression?" ,
+        "expression" : "" ,
+        "correct": "Parentheses",
+        "incorrect" : [
+           "Exponential",
+           "Addition",
+           "Multiplication"
+           
+        ],
+       "Explanation" : "Just remember: PEMDAS, that is, Parenthesis, Exponentiation, Division, Multiplication, Addition, Subtraction. Note that the precedence order of Division and Multiplication is the same. Likewise, the order of Addition and Subtraction is also the same."
+        
+    },
+
+    {
+        "id":"21",
+        "category" : " Core Data types",
+        "instruction" : "Which of these in not a core data type?" ,
+        "expression" : "" ,
+        "correct": "Class",
+        "incorrect" : [
+           " Lists",
+           "Dictionary",
+           "Tuples"
+        ],
+       "Explanation" : "Class is a user defined data type."
+        
+    },
+
+    {     "id":"22",
+        "category" : " Core Data types",
+        "instruction" : "Given a function that does not return any value, What value is thrown by default when executed in shell." ,
+        "expression" : "" ,
+        "correct": "None",
+        "incorrect" : [
+           "int",
+           "bool",
+           "void"
+        ],
+       "Explanation" : "Python shell throws a NoneType object back."
+    },
+
+    {     "id":"23",
+        "category" : " Core Data types",
+        "instruction" : "What will be the output of the following Python code?" ,
+        "expression" : ">>>str=\"hello\" >>>str[:2]  >>>" ,
+        "correct": " he",
+        "incorrect" : [
+           " lo",
+           "olleh",
+           "hello"
+        ],
+       "Explanation" : " We are printing only the 1st two bytes of string and hence the answer is “he”."
+        
+    },
+
+    {   "id":"24",
+        "category" : " Core Data types",
+        "instruction" : " Which of the following will run without errors?" ,
+        "expression" : "" ,
+        "correct": "round(45.8)",
+        "incorrect" : [
+           " round(6352.898,2,5)",
+           " round()",
+           "round(7463.123,2,1)"
+        ],
+       "Explanation" : "Execute help(round) in the shell to get details of the parameters that are passed into the round function."
+        
+    },
+
+    {   "id":"25",
+        "category" : " Core Data types",
+        "instruction" : "What is the return type of function id?" ,
+        "expression" : "" ,
+        "correct": "int",
+        "incorrect" : [
+           "float",
+           "bool",
+           "dict",
+           ""
+        ],
+       "Explanation" : "Execute help(id) to find out details in python shell.id returns a integer value that is unique."
+        
+    },
+
+    {     "id":"26",
+        "category" : " Core Data types",
+        "instruction" : "n python we do not specify types, it is directly interpreted by the compiler, so consider the following operation to be performed." ,
+        "expression" : ">>>x = 13 ? 2 objective is to make sure x has a integer value, select all that apply (python 3.xx)" ,
+        "correct": "All of the mentioned",
+        "incorrect" : [
+           " 13 // 2",
+           " int(13 / 2)",
+           " 13 % 2"
+        ],
+       "Explanation" : "// is integer operation in python 3.0 and int(..) is a type cast operator."
+        
+    },
+
+    {     "id":"27",
+        "category" : " Core Data types",
+        "instruction" : " What error occurs when you execute the following Python code snippet?" ,
+        "expression" : "apple = mango" ,
+        "correct": "NameError",
+        "incorrect" : [
+           "SyntaxError",
+           "ValueError",
+           " TypeError"
+        ],
+       "Explanation" : "Mango is not defined hence name error."
+        
+    },
+    {     "id":"28",
+        "category" : " Core Data types",
+        "instruction" : " What will be the output of the following Python code snippet?" ,
+        "expression" : "def example(a):    a = a + '2'    a = a*2     return  >>>example(\"hello\")" ,
+        "correct": "indentation Error",
+        "incorrect" : [
+           "cannot perform mathematical operation on strings",
+           " hello2",
+           " hello2hello2"
+        ],
+       "Explanation" : "Python codes have to be indented properly."
+        
+    },
+
+    {     "id":"29",
+        "category" : " Core Data types",
+        "instruction" : " What data type is the object below?" ,
+        "expression" : "L = [1, 23, 'hello', 1]" ,
+        "correct": "list",
+        "incorrect" : [
+           "dictionary",
+           "array",
+           "tuple"
+        ],
+       "Explanation" : "List data type can store any values within it."
+        
+    },
+
+    {     "id":"30",
+        "category" : " Core Data types",
+        "instruction" : " In order to store values in terms of key and value we use what core data type." ,
+        "expression" : "" ,
+        "correct": "dictionary",
+        "incorrect" : [
+           "list",
+           " tuple",
+           "class"
+        ],
+       "Explanation" : "Dictionary stores values in terms of keys and values."
+        
+    },
+
+    {     "id":"31",
+        "category" : " Numeric Types",
+        "instruction" : "What is the output of print 0.1 + 0.2 == 0.3?" ,
+        "expression" : "" ,
+        "correct": "False",
+        "incorrect" : [
+           "True",
+           "Machine dependent",
+           " Error"
+        ],
+       "Explanation" : "Neither of 0.1, 0.2 and 0.3 can be represented accurately in binary. The round off errors from 0.1 and 0.2 accumulate and hence there is a difference of 5.5511e-17 between (0.1 + 0.2) and 0.3."
+        
+    },
+
+    {     "id":"32",
+        "category" : " Numeric Types",
+        "instruction" : "Which of the following is not a complex number?" ,
+        "expression" : "" ,
+        "correct": "k = 2 + 3l",
+        "incorrect" : [
+           "k = 2 + 3J",
+           "k = complex(2, 3)",
+           " k = 2 + 3j"
+        ],
+       "Explanation" : "l (or L) stands for long."
+        
+    },
+
+    {     "id":"33",
+        "category" : " Numeric Types",
+        "instruction" : "What is the type of inf?" ,
+        "expression" : "" ,
+        "correct": " Float",
+        "incorrect" : [
+           "Boolean",
+           " Integer",
+           " Complex"
+        ],
+       "Explanation" : "Infinity is a special case of floating point numbers. It can be obtained by float(‘inf’)."
+        
+    },
+
+    {     "id":"34",
+        "category" : " Numeric Types",
+        "instruction" : "What does ~4 evaluate to?" ,
+        "expression" : "" ,
+        "correct": "-5",
+        "incorrect" : [
+           "-4",
+           " -3",
+           " +3"
+        ],
+       "Explanation" : " ~x is equivalent to -(x+1)."
+        
+    },
+
+    {     "id":"35",
+        "category" : " Numeric Types",
+        "instruction" : "What does ~~~~~~5 evaluate to?" ,
+        "expression" : "+5" ,
+        "correct": "",
+        "incorrect" : [
+           "-11",
+           "+11",
+           "-5"
+        ],
+       "Explanation" : "~x is equivalent to -(x+1)."
+        
+    },
+
+    {     "id":"36",
+        "category" : " Numeric Types",
+        "instruction" : "Which of the following is incorrect?" ,
+        "expression" : "" ,
+        "correct": " 03964",
+        "incorrect" : [
+           "0b101",
+           " 0x4f5",
+           "19023"
+        ],
+       "Explanation" : "Numbers starting with a 0 are octal numbers but 9 isn’t allowed in octal numbers."
+        
+    },
+
+    {     "id":"37",
+        "category" : " Numeric Types",
+        "instruction" : "What is the result of cmp(3, 1)?" ,
+        "expression" : "" ,
+        "correct": " 1",
+        "incorrect" : [
+           "0",
+           " True",
+           "False"
+        ],
+       "Explanation" : "cmp(x, y) returns 1 if x > y, 0 if x == y and -1 if x < y."
+        
+    },
+
+    {     "id":"38",
+        "category" : " Numeric Types",
+        "instruction" : "cmp(x, y) returns 1 if x > y, 0 if x == y and -1 if x < y." ,
+        "expression" : "" ,
+        "correct": " float(’12+34′)",
+        "incorrect" : [
+           "float(‘inf’) ",
+           "float(‘nan’)",
+           " float(’56’+’78’)",
+           ""
+        ],
+       "Explanation" : " ‘+’ cannot be converted to a float."
+        
+    },
+
+    {     "id":"39",
+        "category" : " Numeric Types",
+        "instruction" : "What is the result of round(0.5) – round(-0.5)?" ,
+        "expression" : "" ,
+        "correct": " Value depends on Python version",
+        "incorrect" : [
+           "1.0",
+           "2.0",
+           " 0.0"
+        ],
+       "Explanation" : "The behavior of the round() function is different in Python 2 and Python 3. In Python 2, it rounds off numbers away from 0 when the number to be rounded off is exactly halfway through. round(0.5) is 1 and round(-0.5) is -1 whereas in Python 3, it rounds off numbers towards nearest even number when the number to be rounded off is exactly halfway through. See the below output. \n  Here’s the runtime output for Python version 2.7 interpreter.6   \n  $ python \n \n  Python 2.7.17 (default, Nov  7 2019, 10:07:09) \n   >>> round(0.5) \n  1.0  \n>>> round(-0.5) \n -1.0 \n>>>   \nIn the above output, you can see that the round() functions on 0.5 and -0.5 are moving away from 0 and hence “round(0.5) – (round(-0.5)) = 1 – (-1) = 2”  \n\nHere’s the runtime output for Python version 3.6 interpreter. \n\n $ python3   \nPython 3.6.8 (default, Oct  7 2019, 12:59:55) \n >>> round(0.5) \n 0 \n >>> round(-0.5) \n 0 \n>>> round(2.5) \n 2 \n >>> round(3.5) \n 4 \n >>> \n In the above output, you can see that the round() functions on 0.5 and -0.5 are moving towards 0 and hence “round(0.5) – (round(-0.5)) = 0 – 0 = 0“. Also note that the round(2.5) is 2 (which is an even number) whereas round(3.5) is 4 (which is an even number)."
+        
+    },
+
+    {     "id":"40",
+        "category" : " Numeric Types", 
+        "instruction" : "What does 3 ^ 4 evaluate to?" ,
+        "expression" : "" ,
+        "correct": " 7",
+        "incorrect" : [
+           "81",
+           " 12",
+           "0.75"
+        ],
+       "Explanation" : ": ^ is the Binary XOR operator."
+        
+    },
+
+    {     "id":"41",
+        "category" : " Precedence and Associativity – 1",
+        "instruction" : "The value of the expressions 4/(3*(2-1)) and 4/3*(2-1) is the same." ,
+        "expression" : "" ,
+        "correct": "True",
+        "incorrect" : [
+           "False"
+        ],
+       "Explanation" : "Although the presence of parenthesis does affect the order of precedence, in the case shown above, it is not making a difference. The result of both of these expressions is 1.333333333. Hence the statement is true."
+        
+    },
+
+    {
+      "id":"42",
+      "category" : " Precedence and Associativity – 1",
+      "instruction" : "What will be the value of the following Python expression?" ,
+        "expression" : "4 + 3 % 5" ,
+        "correct": " 7",
+        "incorrect" : [
+           " 4",
+           "2",
+           " 0"
+        ],
+       "Explanation" : "The order of precedence is: %, +. Hence the expression above, on simplification results in 4 + 3 = 7. Hence the result is 7."
+        
+    },
+
+    {
+      "id":"43",
+      "category" : " Precedence and Associativity – 1",
+      "instruction" : " Evaluate the expression given below if A = 16 and B = 15." ,
+        "expression" : "A % B // A" ,
+        "correct": " 0",
+        "incorrect" : [
+           " 0.0",
+           " 1.0",
+           "1"
+        ],
+       "Explanation" : "The above expression is evaluated as: 16%15//16, which is equal to 1//16, which results in 0."
+        
+    },
+
+    {
+      "id":"44",
+      "category" : " Precedence and Associativity – 1",
+      "instruction" : "Which of the following operators has its associativity from right to left?" ,
+        "expression" : "" ,
+        "correct": "**",
+        "incorrect" : [
+           "+",
+           "//",
+           " %",
+           ""
+        ],
+       "Explanation" : "All of the operators shown above have associativity from left to right, except exponentiation operator (**) which has its associativity from right to left."
+        
+    },
+
+    {
+      "id":"45",
+      "category" : " Precedence and Associativity – 1",
+      "instruction" : " What will be the value of x in the following Python expression?" ,
+        "expression" : "x = int(43.55+2/2)" ,
+        "correct": "44",
+        "incorrect" : [
+           "22",
+           " 23",
+           "43",
+           ""
+        ],
+       "Explanation" : "The expression shown above is an example of explicit conversion. It is evaluated as int(43.55+1) = int(44.55) = 44. Hence the result of this expression is 44."
+        
+    },
+
+    {
+         "id":"46",    
+         "category" : " Precedence and Associativity – 1",
+         "instruction" : "What is the value of the following expression?" ,
+        "expression" : "2+4.00, 2**4.0" ,
+        "correct": "(6.0, 16.0)",
+        "incorrect" : [
+           "(6.00, 16.00)",
+           " (6, 16)",
+           " (6.00, 16.0)"
+
+        ],
+       "Explanation" : " The result of the expression shown above is (6.0, 16.0). This is because the result is automatically rounded off to one decimal place."
+        
+    },
+
+    {
+      "id":"47",
+      "category" : " Precedence and Associativity – 1",
+      "instruction" : "Which of the following is the truncation division operator?" ,
+        "expression" : "" ,
+        "correct": " //",
+        "incorrect" : [
+           " /",
+           "%",
+           " |"
+        ],
+       "Explanation" : "// is the operator for truncation division. It is called so because it returns only the integer part of the quotient, truncating the decimal part. For example: 20//3 = 6."
+        
+    },
+
+    {
+      "id":"48",
+      "category" : " Precedence and Associativity – 1",
+      "instruction" : "What are the values of the following Python expressions?" ,
+        "expression" : " 2**(3**2) (2**3)**2  2**3**2" ,
+        "correct": "512, 64, 512",
+        "incorrect" : [
+           " 64, 512, 64",
+           "64, 64, 64",
+           " 512, 512, 512"
+        ],
+       "Explanation" : "Expression 1 is evaluated as: 2**9, which is equal to 512. Expression 2 is evaluated as 8**2, which is equal to 64. The last expression is evaluated as 2**(3**2). This is because the associativity of ** operator is from right to left. Hence the result of the third expression is 512."
+        
+    },
+
+    {
+      "id":"49",
+      "category" : " Precedence and Associativity – 1",
+      "instruction" : "What is the value of the following expression" ,
+        "expression" : "8/4/2, 8/(4/2)" ,
+        "correct": "(1.0, 4.0)",
+        "incorrect" : [
+           " (1.0, 1.0)",
+           " (4.0. 1.0)",
+           "(4.0, 4.0)"
+        ],
+       "Explanation" : "The above expressions are evaluated as: 2/2, 8/2, which is equal to (1.0, 4.0)."
+        
+    },
+
+    {
+      "id":"50",
+      "category" : " Precedence and Associativity – 1",
+      "instruction" : "What is the value of the following expression?" ,
+        "expression" : "float(22//3+3/3)" ,
+        "correct": " 8.0",
+        "incorrect" : [
+           "8",
+           "8.3",
+           "8.33"
+        ],
+       "Explanation" : "The expression shown above is evaluated as: float( 7+1) = float(8) = 8.0. Hence the result of this expression is 8.0."
+        
+    },
+    
+
+    {
+      "id":"50",
+      "category" : " Precedence and Associativity – 1",
+      "instruction" : "" ,
+        "expression" : "" ,
+        "correct": "",
+        "incorrect" : [
+           "",
+           "",
+           "",
+           ""
+        ],
+       "Explanation" : ""
+        
+    },
+
+    {
+        "category" : "String - 8",
+        "instruction" : "What will be the output of the following Python code?" ,
+        "expression" : "print(\"Hello {name1} and {name2}\".format(name1='foo', name2='bin'))",
+        "correct": " Hello foo and bin",
+        "incorrect" : [
+            "Hello {name1} and {name2}",
+            "Error",
+            "Hello and"
+        ],
+        "Explanation" : "The arguments are accessed by their names."
+        
+    }
+]
