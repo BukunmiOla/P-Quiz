@@ -1,7 +1,8 @@
-package com.example.pquiz
+package io.github.bukunmiola.pquiz
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.pquiz.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
