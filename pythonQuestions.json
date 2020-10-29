@@ -4,7 +4,7 @@
       "category" : "Variable Names",
         "instruction" : "Is Python case sensitive when dealing with identifiers?" ,
         "expression" : "" ,
-        "corect" : "yes",
+        "correct": "yes",
         "incorrect" : [
            "no",
            "machine dependent",
@@ -20,7 +20,7 @@
       "category" : "Variable Names",
         "instruction" : " What is the maximum possible length of an identifier?" ,
         "expression" : "" ,
-        "corect" : "none of the mentioned",
+        "correct": "none of the mentioned",
         "incorrect" : [
            " 31 characters",
            " 63 characters",
@@ -35,7 +35,7 @@
       "category" : "Variable Names",
         "instruction" : "Which of the following is invalid?" ,
         "expression" : "" ,
-        "corect" : "none of the mentioned",
+        "correct": "none of the mentioned",
         "incorrect" : [
            "_a = 1",
            " __a = 1",
@@ -49,7 +49,7 @@
       "category" : "Variable Names",
         "instruction" : " Which of the following is an invalid variable?" ,
         "expression" : "" ,
-        "corect" : "1st_string",
+        "correct": "1st_string",
         "incorrect" : [
            " my_string_1",
            "foo",
@@ -64,7 +64,7 @@
       "category" : "Variable Names",
         "instruction" : "Why are local variable names beginning with an underscore discouraged?" ,
         "expression" : "" ,
-        "corect" : "they are used to indicate a private variables of a class",
+        "correct": "they are used to indicate a private variables of a class",
         "incorrect" : [
            " they confuse the interpreter",
            " they are used to indicate global variables",
@@ -79,7 +79,7 @@
       "category" : "Variable Names",
         "instruction" : " Which of the following is not a keyword?" ,
         "expression" : "" ,
-        "corect" : "eval",
+        "correct": "eval",
         "incorrect" : [
            " assert",
            "nonlocal",
@@ -94,7 +94,7 @@
       "category" : "Variable Names",
         "instruction" : "All keywords in Python are in _________" ,
         "expression" : "" ,
-        "corect" : " None of the mentioned",
+        "correct": " None of the mentioned",
         "incorrect" : [
            " lower case",
            " UPPER CASE",
@@ -109,7 +109,7 @@
       "category" : "Variable Names",
         "instruction" : " Which of the following is true for variable names in Python?" ,
         "expression" : "" ,
-        "corect" : " unlimited length",
+        "correct": " unlimited length",
         "incorrect" : [
            " all private members must have leading and trailing underscores",
            "underscore and ampersand are the only two special characters allowed",
@@ -124,7 +124,7 @@
       "category" : "Variable Names",
         "instruction" : "Which of the following is an invalid statement?" ,
         "expression" : "" ,
-        "corect" : "a b c = 1000 2000 3000",
+        "correct": "a b c = 1000 2000 3000",
         "incorrect" : [
            " abc = 1,000,000",
            "a,b,c = 1000, 2000, 3000",
@@ -139,7 +139,7 @@
       "category" : "Variable Names",
         "instruction" : " Which of the following cannot be a variable?" ,
         "expression" : "" ,
-        "corect" : " in",
+        "correct": " in",
         "incorrect" : [
            "__init__",
            "it",
@@ -154,7 +154,7 @@
       "category" : " Basic Operators",
         "instruction" : "Which is the correct operator for power(xy)?" ,
         "expression" : "" ,
-        "corect" : " X**y",
+        "correct": " X**y",
         "incorrect" : [
            " X^y",
            " X^^y",
@@ -169,7 +169,7 @@
         "category" : " Basic Operators",
         "instruction" : "Which one of these is floor division?" ,
         "expression" : "" ,
-        "corect" : " //",
+        "correct": " //",
         "incorrect" : [
            "/",
            " %",
@@ -184,7 +184,7 @@
         "category" : " Basic Operators",
         "instruction" : "What is the order of precedence in python?" ,
         "expression" : "i)Parentheses   ii) Exponential  iii) Multiplication   iv) Division  v) Addition  vi) Subtraction" ,
-        "corect" : "i,ii,iii,iv,v,vi",
+        "correct": "i,ii,iii,iv,v,vi",
         "incorrect" : [
            "ii,i,iii,iv,v,vi",
            " ii,i,iv,iii,v,vi",
@@ -200,7 +200,7 @@
       "category" : " Basic Operators",
       "instruction" : "What is the answer to this expression, 22 % 3 is?" ,
         "expression" : "" ,
-        "corect" : " 1",
+        "correct": " 1",
         "incorrect" : [
            " 7",
            " 0",
@@ -216,7 +216,7 @@
       "category" : " Basic Operators",
        "instruction" : "Mathematical operations can be performed on a string." ,
         "expression" : "" ,
-        "corect" : " False",
+        "correct": " False",
         "incorrect" : [
            " True",
            "",
@@ -232,7 +232,7 @@
       "category" : " Basic Operators",
       "instruction" : "Operators with the same precedence are evaluated in which manner?" ,
         "expression" : "" ,
-        "corect" : "Left to Right",
+        "correct": "Left to Right",
         "incorrect" : [
            "Right to Left",
            "Can’t say",
@@ -248,7 +248,7 @@
       "category" : " Basic Operators",
       "instruction" : "What is the output of this expression, 3*1**3?" ,
         "expression" : "" ,
-        "corect" : "3",
+        "correct": "3",
         "incorrect" : [
            "27",
            "9",
@@ -264,7 +264,7 @@
       "category" : " Basic Operators",
       "instruction" : "Which one of the following has the same precedence level?" ,
         "expression" : "" ,
-        "corect" : " Addition and Subtraction",
+        "correct": " Addition and Subtraction",
         "incorrect" : [
            "Multiplication, Division and Addition",
            "Multiplication, Division, Addition and Subtraction",
@@ -280,7 +280,7 @@
       "category" : " Basic Operators",
       "instruction" : "he expression Int(x) implies that the variable x is converted to integer." ,
         "expression" : "" ,
-        "corect" : "True",
+        "correct": "True",
         "incorrect" : [
            " False"
            
@@ -294,7 +294,7 @@
       "category" : " Basic Operators",
       "instruction" : "Which one of the following has the highest precedence in the expression?" ,
         "expression" : "" ,
-        "corect" : "Parentheses",
+        "correct": "Parentheses",
         "incorrect" : [
            "Exponential",
            "Addition",
@@ -310,7 +310,7 @@
         "category" : " Core Data types",
         "instruction" : "Which of these in not a core data type?" ,
         "expression" : "" ,
-        "corect" : "Class",
+        "correct": "Class",
         "incorrect" : [
            " Lists",
            "Dictionary",
@@ -324,7 +324,7 @@
         "category" : " Core Data types",
         "instruction" : "Given a function that does not return any value, What value is thrown by default when executed in shell." ,
         "expression" : "" ,
-        "corect" : "None",
+        "correct": "None",
         "incorrect" : [
            "int",
            "bool",
@@ -337,7 +337,7 @@
         "category" : " Core Data types",
         "instruction" : "What will be the output of the following Python code?" ,
         "expression" : ">>>str=\"hello\" >>>str[:2]  >>>" ,
-        "corect" : " he",
+        "correct": " he",
         "incorrect" : [
            " lo",
            "olleh",
@@ -351,7 +351,7 @@
         "category" : " Core Data types",
         "instruction" : " Which of the following will run without errors?" ,
         "expression" : "" ,
-        "corect" : "round(45.8)",
+        "correct": "round(45.8)",
         "incorrect" : [
            " round(6352.898,2,5)",
            " round()",
@@ -365,7 +365,7 @@
         "category" : " Core Data types",
         "instruction" : "What is the return type of function id?" ,
         "expression" : "" ,
-        "corect" : "int",
+        "correct": "int",
         "incorrect" : [
            "float",
            "bool",
@@ -380,7 +380,7 @@
         "category" : " Core Data types",
         "instruction" : "n python we do not specify types, it is directly interpreted by the compiler, so consider the following operation to be performed." ,
         "expression" : ">>>x = 13 ? 2 objective is to make sure x has a integer value, select all that apply (python 3.xx)" ,
-        "corect" : "All of the mentioned",
+        "correct": "All of the mentioned",
         "incorrect" : [
            " 13 // 2",
            " int(13 / 2)",
@@ -394,7 +394,7 @@
         "category" : " Core Data types",
         "instruction" : " What error occurs when you execute the following Python code snippet?" ,
         "expression" : "apple = mango" ,
-        "corect" : "NameError",
+        "correct": "NameError",
         "incorrect" : [
            "SyntaxError",
            "ValueError",
@@ -407,7 +407,7 @@
         "category" : " Core Data types",
         "instruction" : " What will be the output of the following Python code snippet?" ,
         "expression" : "def example(a):    a = a + '2'    a = a*2     return  >>>example(\"hello\")" ,
-        "corect" : "indentation Error",
+        "correct": "indentation Error",
         "incorrect" : [
            "cannot perform mathematical operation on strings",
            " hello2",
@@ -421,7 +421,7 @@
         "category" : " Core Data types",
         "instruction" : " What data type is the object below?" ,
         "expression" : "L = [1, 23, 'hello', 1]" ,
-        "corect" : "list",
+        "correct": "list",
         "incorrect" : [
            "dictionary",
            "array",
@@ -435,7 +435,7 @@
         "category" : " Core Data types",
         "instruction" : " In order to store values in terms of key and value we use what core data type." ,
         "expression" : "" ,
-        "corect" : "dictionary",
+        "correct": "dictionary",
         "incorrect" : [
            "list",
            " tuple",
@@ -449,7 +449,7 @@
         "category" : " Numeric Types",
         "instruction" : "What is the output of print 0.1 + 0.2 == 0.3?" ,
         "expression" : "" ,
-        "corect" : "False",
+        "correct": "False",
         "incorrect" : [
            "True",
            "Machine dependent",
@@ -463,7 +463,7 @@
         "category" : " Numeric Types",
         "instruction" : "Which of the following is not a complex number?" ,
         "expression" : "" ,
-        "corect" : "k = 2 + 3l",
+        "correct": "k = 2 + 3l",
         "incorrect" : [
            "k = 2 + 3J",
            "k = complex(2, 3)",
@@ -477,7 +477,7 @@
         "category" : " Numeric Types",
         "instruction" : "What is the type of inf?" ,
         "expression" : "" ,
-        "corect" : " Float",
+        "correct": " Float",
         "incorrect" : [
            "Boolean",
            " Integer",
@@ -491,7 +491,7 @@
         "category" : " Numeric Types",
         "instruction" : "What does ~4 evaluate to?" ,
         "expression" : "" ,
-        "corect" : "-5",
+        "correct": "-5",
         "incorrect" : [
            "-4",
            " -3",
@@ -505,7 +505,7 @@
         "category" : " Numeric Types",
         "instruction" : "What does ~~~~~~5 evaluate to?" ,
         "expression" : "+5" ,
-        "corect" : "",
+        "correct": "",
         "incorrect" : [
            "-11",
            "+11",
@@ -519,7 +519,7 @@
         "category" : " Numeric Types",
         "instruction" : "Which of the following is incorrect?" ,
         "expression" : "" ,
-        "corect" : " 03964",
+        "correct": " 03964",
         "incorrect" : [
            "0b101",
            " 0x4f5",
@@ -533,7 +533,7 @@
         "category" : " Numeric Types",
         "instruction" : "What is the result of cmp(3, 1)?" ,
         "expression" : "" ,
-        "corect" : " 1",
+        "correct": " 1",
         "incorrect" : [
            "0",
            " True",
@@ -547,7 +547,7 @@
         "category" : " Numeric Types",
         "instruction" : "cmp(x, y) returns 1 if x > y, 0 if x == y and -1 if x < y." ,
         "expression" : "" ,
-        "corect" : " float(’12+34′)",
+        "correct": " float(’12+34′)",
         "incorrect" : [
            "float(‘inf’) ",
            "float(‘nan’)",
@@ -562,7 +562,7 @@
         "category" : " Numeric Types",
         "instruction" : "What is the result of round(0.5) – round(-0.5)?" ,
         "expression" : "" ,
-        "corect" : " Value depends on Python version",
+        "correct": " Value depends on Python version",
         "incorrect" : [
            "1.0",
            "2.0",
@@ -576,7 +576,7 @@
         "category" : " Numeric Types", 
         "instruction" : "What does 3 ^ 4 evaluate to?" ,
         "expression" : "" ,
-        "corect" : " 7",
+        "correct": " 7",
         "incorrect" : [
            "81",
            " 12",
@@ -590,7 +590,7 @@
         "category" : " Precedence and Associativity – 1",
         "instruction" : "The value of the expressions 4/(3*(2-1)) and 4/3*(2-1) is the same." ,
         "expression" : "" ,
-        "corect" : "True",
+        "correct": "True",
         "incorrect" : [
            "False"
         ],
@@ -603,7 +603,7 @@
       "category" : " Precedence and Associativity – 1",
       "instruction" : "What will be the value of the following Python expression?" ,
         "expression" : "4 + 3 % 5" ,
-        "corect" : " 7",
+        "correct": " 7",
         "incorrect" : [
            " 4",
            "2",
@@ -618,7 +618,7 @@
       "category" : " Precedence and Associativity – 1",
       "instruction" : " Evaluate the expression given below if A = 16 and B = 15." ,
         "expression" : "A % B // A" ,
-        "corect" : " 0",
+        "correct": " 0",
         "incorrect" : [
            " 0.0",
            " 1.0",
@@ -633,7 +633,7 @@
       "category" : " Precedence and Associativity – 1",
       "instruction" : "Which of the following operators has its associativity from right to left?" ,
         "expression" : "" ,
-        "corect" : "**",
+        "correct": "**",
         "incorrect" : [
            "+",
            "//",
@@ -649,7 +649,7 @@
       "category" : " Precedence and Associativity – 1",
       "instruction" : " What will be the value of x in the following Python expression?" ,
         "expression" : "x = int(43.55+2/2)" ,
-        "corect" : "44",
+        "correct": "44",
         "incorrect" : [
            "22",
            " 23",
@@ -665,7 +665,7 @@
          "category" : " Precedence and Associativity – 1",
          "instruction" : "What is the value of the following expression?" ,
         "expression" : "2+4.00, 2**4.0" ,
-        "corect" : "(6.0, 16.0)",
+        "correct": "(6.0, 16.0)",
         "incorrect" : [
            "(6.00, 16.00)",
            " (6, 16)",
@@ -681,7 +681,7 @@
       "category" : " Precedence and Associativity – 1",
       "instruction" : "Which of the following is the truncation division operator?" ,
         "expression" : "" ,
-        "corect" : " //",
+        "correct": " //",
         "incorrect" : [
            " /",
            "%",
@@ -696,7 +696,7 @@
       "category" : " Precedence and Associativity – 1",
       "instruction" : "What are the values of the following Python expressions?" ,
         "expression" : " 2**(3**2) (2**3)**2  2**3**2" ,
-        "corect" : "512, 64, 512",
+        "correct": "512, 64, 512",
         "incorrect" : [
            " 64, 512, 64",
            "64, 64, 64",
@@ -711,7 +711,7 @@
       "category" : " Precedence and Associativity – 1",
       "instruction" : "What is the value of the following expression" ,
         "expression" : "8/4/2, 8/(4/2)" ,
-        "corect" : "(1.0, 4.0)",
+        "correct": "(1.0, 4.0)",
         "incorrect" : [
            " (1.0, 1.0)",
            " (4.0. 1.0)",
@@ -726,7 +726,7 @@
       "category" : " Precedence and Associativity – 1",
       "instruction" : "What is the value of the following expression?" ,
         "expression" : "float(22//3+3/3)" ,
-        "corect" : " 8.0",
+        "correct": " 8.0",
         "incorrect" : [
            "8",
            "8.3",
@@ -742,7 +742,7 @@
       "category" : "Precedence and Associativity – 2",
       "instruction" : "What will be the output of the following Python expression?" ,
         "expression" : "print(4.00/(2.0+2.0))" ,
-        "corect" : " 1.0",
+        "correct": " 1.0",
         "incorrect" : [
            " Error",
            "1.00",
@@ -757,7 +757,7 @@
       "category" : "Precedence and Associativity – 2",
       "instruction" : " What will be the value of X in the following Python expression?" ,
         "expression" : "X = 2+9*((3*12)-8)/10" ,
-        "corect" : "27.2",
+        "correct": "27.2",
         "incorrect" : [
            "30.0",
            " 30.8",
@@ -772,7 +772,7 @@
       "category" : "Precedence and Associativity – 2",
       "instruction" : " Which of the following expressions involves coercion when evaluated in Python?" ,
         "expression" : "" ,
-        "corect" : "1.7 % 2",
+        "correct": "1.7 % 2",
         "incorrect" : [
            "4.7 – 1.5",
            " 7.9 * 6.3",
@@ -787,7 +787,7 @@
       "category" : "Precedence and Associativity – 2",
       "instruction" : "What will be the output of the following Python expression?" ,
         "expression" : "24//6%3, 24//4//2" ,
-        "corect" : " (1,3)",
+        "correct": " (1,3)",
         "incorrect" : [
            " (0,3)",
            " (1,0)",
@@ -802,7 +802,7 @@
       "category" : "Precedence and Associativity – 2",
       "instruction" : "Which among the following list of operators has the highest precedence?" ,
         "expression" : "+, -, **, %, /, <<, >>, |" ,
-        "corect" : "**",
+        "correct": "**",
         "incorrect" : [
            " <<, >>",
            " |",
@@ -817,7 +817,7 @@
       "category" : "Precedence and Associativity – 2",
       "instruction" : " What will be the value of the following Python expression?" ,
         "expression" : "float(4+int(2.39)%2)" ,
-        "corect" : "4.0",
+        "correct": "4.0",
         "incorrect" : [
            "5.0",
            " 5",
@@ -832,7 +832,7 @@
       "category" : "Precedence and Associativity – 2",
       "instruction" : "Which of the following expressions is an example of type conversion?" ,
         "expression" : "" ,
-        "corect" : " 4.0 + float(3)",
+        "correct": " 4.0 + float(3)",
         "incorrect" : [
            "5.3 + 6.3",
            " 5.0 + 3",
@@ -847,7 +847,7 @@
       "category" : "Precedence and Associativity – 2",
       "instruction" : "Which of the following expressions results in an error?" ,
         "expression" : "" ,
-        "corect" : "int(’10.8’)",
+        "correct": "int(’10.8’)",
         "incorrect" : [
            "float(‘10’)",
            " int(‘10’)",
@@ -862,7 +862,7 @@
       "category" : "Precedence and Associativity – 2",
       "instruction" : " What will be the value of the following Python expression?" ,
         "expression" : "4+2**5//10" ,
-        "corect" : " 7",
+        "correct": " 7",
         "incorrect" : [
            " 3",
            "77",
@@ -877,7 +877,7 @@
       "category" : "Precedence and Associativity – 2",
       "instruction" : "The expression 2**2**3 is evaluates as: (2**2)**3." ,
         "expression" : "" ,
-        "corect" : " False",
+        "correct": " False",
         "incorrect" : [
            "True",
            "",
@@ -893,7 +893,7 @@
       "category" : "Bitwise – 1",
       "instruction" : "What will be the output of the following Python code snippet if x=1?" ,
         "expression" : "x<<2" ,
-        "corect" : "4",
+        "correct": "4",
         "incorrect" : [
            "8",
            " 1",
@@ -908,7 +908,7 @@
       "category" : "Bitwise – 1",
       "instruction" : " What will be the output of the following Python expression?" ,
         "expression" : "bin(29)" ,
-        "corect" : "‘0b11101’",
+        "correct": "‘0b11101’",
         "incorrect" : [
            "‘0b10111’",
            " ‘0b11111’",
@@ -923,7 +923,7 @@
       "category" : "Bitwise – 1",
       "instruction" : "What will be the value of x in the following Python expression, if the result of that expression is 2?" ,
         "expression" : "x>>2" ,
-        "corect" : "8",
+        "correct": "8",
         "incorrect" : [
            " 4",
            "2",
@@ -938,7 +938,7 @@
       "category" : "Bitwise – 1",
       "instruction" : "What will be the output of the following Python expression?" ,
         "expression" : "int(1011)?" ,
-        "corect" : "1011",
+        "correct": "1011",
         "incorrect" : [
            " 11",
            "13",
@@ -953,7 +953,7 @@
       "category" : "Bitwise – 1",
       "instruction" : "To find the decimal value of 1111, that is 15, we can use the function:" ,
         "expression" : "" ,
-        "corect" : " int(‘1111’,2)",
+        "correct": " int(‘1111’,2)",
         "incorrect" : [
            "int(1111,10)",
            "int(‘1111’,10)",
@@ -968,7 +968,7 @@
       "category" : "Bitwise – 1",
       "instruction" : "What will be the output of the following Python expression if x=15 and y=12?" ,
         "expression" : "x & y" ,
-        "corect" : " 12",
+        "correct": " 12",
         "incorrect" : [
            " b1101",
            "0b1101",
@@ -983,7 +983,7 @@
       "category" : "Bitwise – 1",
       "instruction" : " Which of the following expressions results in an error?" ,
         "expression" : "" ,
-        "corect" : " int(1011,2)",
+        "correct": " int(1011,2)",
         "incorrect" : [
            " int(1011)",
            " int(‘1011’,23)",
@@ -998,7 +998,7 @@
       "category" : "Bitwise – 1",
       "instruction" : "Which of the following represents the bitwise XOR operator?" ,
         "expression" : "" ,
-        "corect" : "^",
+        "correct": "^",
         "incorrect" : [
            " &",
            " |",
@@ -1014,7 +1014,7 @@
       "category" : "Bitwise – 1",
       "instruction" : " What is the value of the following Python expression?" ,
         "expression" : "bin(0x8)" ,
-        "corect" : " ‘0b1000’",
+        "correct": " ‘0b1000’",
         "incorrect" : [
            "1000",
            " 8",
@@ -1030,7 +1030,7 @@
       "category" : "Bitwise – 1",
       "instruction" : "What will be the output of the following Python expression?" ,
         "expression" : "0x35 | 0x75" ,
-        "corect" : " 117",
+        "correct": " 117",
         "incorrect" : [
            "115",
            "116",
@@ -1045,7 +1045,7 @@
       "category" : "Bitwise – 2",
       "instruction" : "It is not possible for the two’s complement value to be equal to the original value in any case." ,
         "expression" : "" ,
-        "corect" : " False",
+        "correct": " False",
         "incorrect" : [
            "True",
            ""
@@ -1060,7 +1060,7 @@
       "category" : "Bitwise – 2",
       "instruction" : "The one’s complement of 110010101 is:" ,
         "expression" : "" ,
-        "corect" : " 001101010",
+        "correct": " 001101010",
         "incorrect" : [
            " 110010101",
            "001101011",
@@ -1076,7 +1076,7 @@
       "category" : "Bitwise – 2",
       "instruction" : "Bitwise _________ gives 1 if either of the bits is 1 and 0 when both of the bits are 1." ,
         "expression" : "" ,
-        "corect" : " XOR",
+        "correct": " XOR",
         "incorrect" : [
            "OR",
            " AND",
@@ -1091,7 +1091,7 @@
       "category" : "Bitwise – 2",
       "instruction" : "What will be the output of the following Python expression?" ,
         "expression" : "4^12" ,
-        "corect" : " 8",
+        "correct": " 8",
         "incorrect" : [
            "2",
            "4",
@@ -1107,7 +1107,7 @@
       "category" : "Bitwise – 2",
       "instruction" : "Any odd number on being AND-ed with ________ always gives 1. Hint: Any even number on being AND-ed with this value always gives 0." ,
         "expression" : "" ,
-        "corect" : "1",
+        "correct": "1",
         "incorrect" : [
            "10",
            " 2",
@@ -1123,7 +1123,7 @@
       "category" : "Bitwise – 2",
       "instruction" : "What will be the value of the following Python expression?" ,
         "expression" : " bin(10-2)+bin(12^4)" ,
-        "corect" : "0b10000b1000",
+        "correct": "0b10000b1000",
         "incorrect" : [
            "0b10000",
            " 0b10001000",
@@ -1139,7 +1139,7 @@
       "category" : "Bitwise – 2",
       "instruction" : "Which of the following expressions can be used to multiply a given number ‘a’ by 4?" ,
         "expression" : "" ,
-        "corect" : "a<<2",
+        "correct": "a<<2",
         "incorrect" : [
            " a<<4",
            "a>>2",
@@ -1154,13 +1154,8 @@
       "id":"78",
       "category" : "Bitwise – 2",
       "instruction" : "What will be the output of the following Python code if a=10 and b =20?" ,
-        "expression" : "a=10
-        b=20
-        a=a^b
-        b=a^b
-        a=a^b
-        print(a,b)" ,
-        "corect" : " 20 10",
+        "expression" : "a=10 \nb=20  \na=a^b    \nb=a^b \na=a^b  \nprint(a,b)" ,
+        "correct": " 20 10",
         "incorrect" : [
            "10 20",
            " 10 10",
@@ -1176,7 +1171,7 @@
       "category" : "Bitwise – 2",
       "instruction" : "What is the two’s complement of -44?" ,
         "expression" : "" ,
-        "corect" : "11010100",
+        "correct": "11010100",
         "incorrect" : [
            " 1011011",
            "11101011",
@@ -1192,7 +1187,7 @@
       "category" : "Bitwise – 2",
       "instruction" : "What will be the output of the following Python expression?" ,
         "expression" : "~100?" ,
-        "corect" : " -101",
+        "correct": " -101",
         "incorrect" : [
            "101",
            "100",
@@ -1208,7 +1203,7 @@
       "category" : "Boolean",
       "instruction" : " What will be the output of the following Python code snippet?" ,
         "expression" : "bool(‘False’)  bool()" ,
-        "corect" : " True False",
+        "correct": " True False",
         "incorrect" : [
            " False  False",
            " False True",
@@ -1225,7 +1220,7 @@
       "category" : "Boolean",
       "instruction" : "What will be the output of the following Python code snippet?" ,
         "expression" : "['hello', 'morning'][bool('')]" ,
-        "corect" : " hello",
+        "correct": " hello",
         "incorrect" : [
            " error",
            " no output",
@@ -1241,7 +1236,7 @@
       "category" : "Boolean",
       "instruction" : " What will be the output of the following Python code snippet?" ,
         "expression" : "not(3>4)  not(1&1)" ,
-        "corect" : "True False",
+        "correct": "True False",
         "incorrect" : [
            "True True",
            "False True",
@@ -1257,7 +1252,7 @@
       "category" : "Boolean",
       "instruction" : " What will be the output of the following Python code?" ,
         "expression" : "['f', 't'][bool('spam')]" ,
-        "corect" : " t",
+        "correct": " t",
         "incorrect" : [
            " f",
            "No output",
@@ -1273,7 +1268,7 @@
       "category" : "Boolean",
       "instruction" : "What will be the output of the following Python code?" ,
         "expression" : "l=[1, 0, 2, 0, 'hello', '', []]  list(filter(bool, l))" ,
-        "corect" : " [1, 2, ‘hello’]",
+        "correct": " [1, 2, ‘hello’]",
         "incorrect" : [
            "Error",
            "[1, 0, 2, ‘hello’, ”, []]",
@@ -1288,7 +1283,7 @@
       "category" : "Boolean",
       "instruction" : "What will be the output of the following Python code if the system date is 21st June, 2017 (Wednesday)?" ,
         "expression" : "[] or {}  {} or []" ,
-        "corect" : "   {}  []",
+        "correct": "   {}  []",
         "incorrect" : [
            "[]  {}",
            "[] []",
@@ -1304,7 +1299,7 @@
       "category" : "Boolean",
       "instruction" : "What will be the output of the following Python code?" ,
         "expression" : "class Truth: pass x=Truth() bool(x)" ,
-        "corect" : " true",
+        "correct": " true",
         "incorrect" : [
            "pass",
            " false",
@@ -1318,8 +1313,8 @@
       "id":"88",
       "category" : "Boolean",
       "instruction" : " What will be the output of the following Python code?" ,
-        "expression" : "if (9 < 0) and (0 < -9)  print("hello") elif (9 > 0) or False:  print("good")  else: print("bad")" ,
-        "corect" : "good",
+        "expression" : "if (9 < 0) and (0 < -9)  print(\"hello\") elif (9 > 0) or False:  print(\"good\")  else: print(\"bad\")" ,
+        "correct": "good",
         "incorrect" : [
            "error",
            "hello",
@@ -1334,16 +1329,13 @@
       "category" : "Boolean",
       "instruction" : "Which of the following Boolean expressions is not logically equivalent to the other three?" ,
         "expression" : "" ,
-        "corect" : "not(-6>10 or-6==10)",
+        "correct": "not(-6>10 or-6==10)",
         "incorrect" : [
            " not(-6<0 or-6>10",
            "-6>=0 and -6<=10",
            "not(-6<10 or-6==10)"
         ],
-       "Explanation" : "The expression not(-6<0 or -6>10) returns the output False.
-       The expression -6>=0 and -6<=10 returns the output False.
-       The expression not(-6<10 or -6==10) returns the output False.
-       The expression not(-6>10 or -6==10) returns the output True."
+       "Explanation" : "The expression not(-6<0 or -6>10) returns the output False. \nThe expression -6>=0 and -6<=10 returns the output False. \nThe expression not(-6<10 or -6==10) returns the output False. \nThe expression not(-6>10 or -6==10) returns the output True."
         
     },
 
@@ -1352,7 +1344,7 @@
       "category" : "Boolean",
       "instruction" : "What will be the output of the following Python code snippet?" ,
         "expression" : "not(10<20) and not(10>30)" ,
-        "corect" : " False",
+        "correct": " False",
         "incorrect" : [
            "True",
            "Error",
@@ -1367,7 +1359,7 @@
       "category" : "Formatting – 1",
       "instruction" : "What will be the output of the following Python code snippet?" ,
         "expression" : "X=”hi”  print(“05d”%X)" ,
-        "corect" : "error",
+        "correct": "error",
         "incorrect" : [
            "00000hi",
            "0000hi",
@@ -1383,7 +1375,7 @@
       "category" : "Formatting – 1",
       "instruction" : " What will be the output of the following Python code snippet?" ,
         "expression" : "X=”san-foundry”  print(“%56s”,X)" ,
-        "corect" : "56 blank spaces before san-foundry",
+        "correct": "56 blank spaces before san-foundry",
         "incorrect" : [
            "56 blank spaces before san and foundry",
            "56 blank spaces after san-foundry",
@@ -1397,8 +1389,8 @@
       "id":"93",
       "category" : "Formatting – 1",
       "instruction" : "The formatting option print(“%Ns”,X) helps us add ‘N’ number of spaces before a given string ‘X’. Hence the output for the code snippet shown above will be 56 blank spaces before the string “san-foundry”." ,
-        "expression" : "print("%-06d"%x)" ,
-        "corect" : "456",
+        "expression" : "print(\"%-06d\"%x)" ,
+        "correct": "456",
         "incorrect" : [
            "000456",
            "456000",
@@ -1414,7 +1406,7 @@
       "category" : "Formatting – 1",
       "instruction" : "What will be the output of the following Python expression if X=345?" ,
         "expression" : "print(“%06d”%X)" ,
-        "corect" : " 000345",
+        "correct": " 000345",
         "incorrect" : [
            " 345000",
            "000000345",
@@ -1429,7 +1421,7 @@
       "category" : "Formatting – 1",
       "instruction" : "Which of the following formatting options can be used in order to add ‘n’ blank spaces after a given string ‘S’?" ,
         "expression" : "" ,
-        "corect" : " print(“%-ns”%S)",
+        "correct": " print(“%-ns”%S)",
         "incorrect" : [
            "print(“%ns”%S)",
            "print(“-ns”%S)",
@@ -1443,8 +1435,8 @@
       "id":"96",
       "category" : "Formatting – 1",
       "instruction" : "What will be the output of the following Python expression if X = -122?" ,
-        "expression" : "print("-%06d"%x)" ,
-        "corect" : "–00122",
+        "expression" : "print(\"-%06d\"%x)" ,
+        "correct": "–00122",
         "incorrect" : [
            " -000122",
            "000122",
@@ -1459,7 +1451,7 @@
       "category" : "Formatting – 1",
       "instruction" : "What will be the output of the following Python expression if the value of x is 34?" ,
         "expression" : "print(“%f”%x)" ,
-        "corect" : " 34.000000",
+        "correct": " 34.000000",
         "incorrect" : [
            " 34.00",
            " 34.0000",
@@ -1473,8 +1465,8 @@
       "id":"98",
       "category" : "Formatting – 1",
       "instruction" : "What will be the output of the following Python expression if x=56.236?" ,
-        "expression" : "print("%.2f"%x)" ,
-        "corect" : " 56.24",
+        "expression" : "print(\"%.2f\"%x)" ,
+        "correct": " 56.24",
         "incorrect" : [
            " 56.00",
            "56.23",
@@ -1488,8 +1480,8 @@
       "id":"99",
       "category" : "Formatting – 1",
       "instruction" : "What will be the output of the following Python expression if x=22.19?" ,
-        "expression" : "print("%5.2f"%x)" ,
-        "corect" : "22.19",
+        "expression" : "print(\"%5.2f\"%x)" ,
+        "correct": "22.19",
         "incorrect" : [
            "22.1900",
            "22.00000",
@@ -1503,8 +1495,8 @@
       "id":"100",
       "category" : "Formatting – 1",
       "instruction" : "The expression shown below results in an error." ,
-        "expression" : "print("-%5d0",989)" ,
-        "corect" : " False",
+        "expression" : "print(\"-%5d0\",989)" ,
+        "correct": " False",
         "incorrect" : [
            "True"
         ],
@@ -1517,7 +1509,7 @@
       "category" : "",
       "instruction" : "" ,
         "expression" : "" ,
-        "corect" : "",
+        "correct": "",
         "incorrect" : [
            "",
            "",
@@ -1533,7 +1525,7 @@
       "category" : "",
       "instruction" : "" ,
         "expression" : "" ,
-        "corect" : "",
+        "correct": "",
         "incorrect" : [
            "",
            "",
@@ -1548,7 +1540,7 @@
         "category" : "String - 8",
         "instruction" : "What will be the output of the following Python code?" ,
         "expression" : "print(\"Hello {name1} and {name2}\".format(name1='foo', name2='bin'))",
-        "corect" : " Hello foo and bin",
+        "correct": " Hello foo and bin",
         "incorrect" : [
             "Hello {name1} and {name2}",
             "Error",
