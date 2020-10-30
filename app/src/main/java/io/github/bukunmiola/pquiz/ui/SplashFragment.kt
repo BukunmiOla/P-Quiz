@@ -1,4 +1,4 @@
-package io.github.bukunmiola.pquiz
+package io.github.bukunmiola.pquiz.ui
 
 import android.os.Bundle
 import android.os.Handler
@@ -9,6 +9,7 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.ActionOnlyNavDirections
 import androidx.navigation.NavDirections
 import androidx.navigation.fragment.NavHostFragment.findNavController
+import io.github.bukunmiola.pquiz.R
 
 class SplashFragment : Fragment() {
 
@@ -30,7 +31,8 @@ class SplashFragment : Fragment() {
    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         Handler().postDelayed({
-            val action = actionSplashInFragmentToSignInFragment()
+            val action =
+                actionSplashInFragmentToSignInFragment()
             findNavController(this).navigate(action)
         }, 3500)
     }

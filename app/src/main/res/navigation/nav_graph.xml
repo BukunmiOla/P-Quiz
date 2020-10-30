@@ -8,7 +8,7 @@
 
     <fragment
         android:id="@+id/splashFragment"
-        android:name="io.github.bukunmiola.pquiz.SplashFragment"
+        android:name="io.github.bukunmiola.pquiz.ui.SplashFragment"
         android:label="fragment_splash"
         tools:layout="@layout/fragment_splash" >
         <action
@@ -18,7 +18,7 @@
 
     <fragment
         android:id="@+id/signInFragment"
-        android:name="io.github.bukunmiola.pquiz.SignInFragment"
+        android:name="io.github.bukunmiola.pquiz.ui.SignInFragment"
         android:label="fragment_sign_in"
         tools:layout="@layout/fragment_sign_in" >
         <action
@@ -31,7 +31,7 @@
 
     <fragment
         android:id="@+id/signUpFragment"
-        android:name="io.github.bukunmiola.pquiz.SignUpFragment"
+        android:name="io.github.bukunmiola.pquiz.ui.SignUpFragment"
         android:label="fragment_sign_up"
         tools:layout="@layout/fragment_sign_up" >
         <action
@@ -45,7 +45,7 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="io.github.bukunmiola.pquiz.HomeFragment"
+        android:name="io.github.bukunmiola.pquiz.ui.home.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/home_fragment" >
     <action

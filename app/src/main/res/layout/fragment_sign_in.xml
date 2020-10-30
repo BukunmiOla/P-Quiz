@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="io.github.bukunmiola.pquiz.SignInFragment">
+    tools:context="io.github.bukunmiola.pquiz.ui.SignInFragment">
 
 
     <LinearLayout
