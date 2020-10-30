@@ -14,4 +14,18 @@
     <string name="sign_up">SIGN UP</string>
     <string name="login_ready">Already have an account? Login</string>
     <string name="pquiz">PQuiz</string>
+
+    <string-array name="category_array">
+        <item>Select topic</item>
+        <item>Variable Names</item>
+        <item>Basic Operators</item>
+        <item>Core Data Types</item>
+        <item>Numeric Types</item>
+        <item>Precedence ad Associativity -1</item>
+        <item>Precedence ad Associativity -2</item>
+        <item>Bitwise -1</item>
+        <item>Bitwise -2</item>
+        <item>Boolean</item>
+        <item>Formatting-1</item>
+    </string-array>
 </resources>
