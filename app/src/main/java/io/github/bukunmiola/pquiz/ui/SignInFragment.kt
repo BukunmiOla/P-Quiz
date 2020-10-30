@@ -81,7 +81,7 @@ class SignInFragment : Fragment() {
                         // ...
                     })
         }
-        goToHome()
+//        goToHome()
 
 
     }
