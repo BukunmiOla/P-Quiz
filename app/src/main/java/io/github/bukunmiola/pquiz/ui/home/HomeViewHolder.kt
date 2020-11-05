@@ -41,24 +41,33 @@ class HomeViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
         optionD?.text = question?.correct
     }
-//    fun onOptionsClicked(view: View) {
-//        if (view is RadioButton) {
-//            // Is the button now checked?
-//            val checked = view.isChecked
-//
-//            // Check which radio button was clicked
-//            when (view.getId()) {
-//                R.id.radio_pirates ->
-//                    if (checked) {
-//                        // Pirates are the best
-//                    }
-//                R.id.radio_ninjas ->
-//                    if (checked) {
-//                        // Ninjas rule
-//                    }
-//            }
-//        }
-//    }
+    fun onOptionsClicked(view: View) {
+        if (view is RadioButton) {
+            // Is the button now checked?
+            val checked = view.isChecked
+
+            // Check which radio button was clicked
+            when (view.getId()) {
+                R.id.radio_option_a ->
+                    if (checked) {
+
+                    }
+                R.id.radio_option_b ->
+                    if (checked) {
+
+                    }
+
+                R.id.radio_option_c ->
+                    if (checked) {
+
+                    }
+                R.id.radio_option_d ->
+                    if (checked) {
+
+                    }
+            }
+        }
+    }
 
 
 }
