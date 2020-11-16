@@ -41,6 +41,7 @@ class HomeViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
         optionD?.text = question?.correct
     }
+
     fun onOptionsClicked(view: View) {
         if (view is RadioButton) {
             // Is the button now checked?
