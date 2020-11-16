@@ -8,6 +8,7 @@
     "options": [
       "no",
       "machine dependent",
+      "yes",
       "none of the mentioned"
     ],
 
@@ -22,6 +23,7 @@
     "expression" : "" ,
     "correct": "none of the mentioned",
     "options": [
+      "none of the mentioned",
       " 31 characters",
       " 63 characters",
       "79 characters"
@@ -39,7 +41,8 @@
     "options": [
       "_a = 1",
       " __a = 1",
-      " __str__ = 1"
+      " __str__ = 1",
+      "none of the mentioned"
     ],
     "Explanation" : "All the statements will execute successfully but at the cost of reduced readability."
   },
@@ -51,6 +54,7 @@
     "expression" : "" ,
     "correct": "1st_string",
     "options": [
+      "1st_string",
       " my_string_1",
       "foo",
       " _"
@@ -67,6 +71,7 @@
     "correct": "they are used to indicate a private variables of a class",
     "options": [
       " they confuse the interpreter",
+      "they are used to indicate a private variables of a class",
       " they are used to indicate global variables",
       " they slow down execution"
     ],
@@ -83,7 +88,8 @@
     "options": [
       " assert",
       "nonlocal",
-      "pass"
+      "pass",
+      "eval"
     ],
     "Explanation" : "eval can be used as a variable."
 
@@ -94,11 +100,12 @@
     "category" : "Variable Names",
     "instruction" : "All keywords in Python are in _________" ,
     "expression" : "" ,
-    "correct": " None of the mentioned",
+    "correct": "None of the mentioned",
     "options": [
-      " lower case",
-      " UPPER CASE",
-      "Capitalized"
+      "lower case",
+      "UPPER CASE",
+      "Capitalized",
+      " None of the mentioned"
     ],
     "Explanation" : "True, False and None are capitalized while the others are in lower case."
 
@@ -111,6 +118,7 @@
     "expression" : "" ,
     "correct": " unlimited length",
     "options": [
+      " unlimited length",
       " all private members must have leading and trailing underscores",
       "underscore and ampersand are the only two special characters allowed",
       " none of the mentioned"
@@ -127,6 +135,7 @@
     "correct": "a b c = 1000 2000 3000",
     "options": [
       " abc = 1,000,000",
+      "a b c = 1000 2000 3000",
       "a,b,c = 1000, 2000, 3000",
       " a_b_c = 1,000,000"
     ],
@@ -139,9 +148,10 @@
     "category" : "Variable Names",
     "instruction" : " Which of the following cannot be a variable?" ,
     "expression" : "" ,
-    "correct": " in",
+    "correct": "in",
     "options": [
       "__init__",
+      "in",
       "it",
       "on"
     ],
@@ -151,14 +161,15 @@
 
   {
     "id": "11",
-    "category" : " Basic Operators",
+    "category" : "Basic Operators",
     "instruction" : "Which is the correct operator for power(xy)?" ,
     "expression" : "" ,
-    "correct": " X**y",
+    "correct": "X**y",
     "options": [
-      " X^y",
-      " X^^y",
-      " None of the mentioned"
+      "X^y",
+      "X^^y",
+      "X**y",
+      "None of the mentioned"
     ],
     "Explanation" : " In python, power operator is x**y i.e. 2**3=8."
 
@@ -166,13 +177,14 @@
 
   {
     "id": "12",
-    "category" : " Basic Operators",
+    "category" : "Basic Operators",
     "instruction" : "Which one of these is floor division?" ,
     "expression" : "" ,
-    "correct": " //",
+    "correct": "//",
     "options": [
       "/",
       " %",
+      "//",
       "None of the mentioned"
 
     ],
@@ -181,13 +193,14 @@
   },
 
   {   "id":"13",
-    "category" : " Basic Operators",
+    "category" : "Basic Operators",
     "instruction" : "What is the order of precedence in python?" ,
     "expression" : "i)Parentheses   ii) Exponential  iii) Multiplication   iv) Division  v) Addition  vi) Subtraction" ,
     "correct": "i,ii,iii,iv,v,vi",
     "options": [
       "ii,i,iii,iv,v,vi",
       " ii,i,iv,iii,v,vi",
+      "i,ii,iii,iv,v,vi",
       "i,ii,iii,iv,vi,v"
 
     ],
@@ -197,14 +210,15 @@
 
   {
     "id":"14",
-    "category" : " Basic Operators",
+    "category" : "Basic Operators",
     "instruction" : "What is the answer to this expression, 22 % 3 is?" ,
     "expression" : "" ,
-    "correct": " 1",
+    "correct": "1",
     "options": [
-      " 7",
-      " 0",
-      " 5"
+      "7",
+      "0",
+      "5",
+      "1"
 
     ],
     "Explanation" : " Modulus operator gives the remainder. So, 22%3 gives the remainder, that is, 1."
@@ -213,13 +227,13 @@
 
   {
     "id":"15",
-    "category" : " Basic Operators",
+    "category" : "Basic Operators TF",
     "instruction" : "Mathematical operations can be performed on a string." ,
     "expression" : "" ,
     "correct": " False",
     "options": [
-      " True",
-      "",
+      "True",
+      " False",
       "",
       ""
     ],
@@ -229,12 +243,13 @@
 
   {
     "id":"16",
-    "category" : " Basic Operators",
+    "category" : "Basic Operators",
     "instruction" : "Operators with the same precedence are evaluated in which manner?" ,
     "expression" : "" ,
     "correct": "Left to Right",
     "options": [
       "Right to Left",
+      "Left to Right",
       "Can’t say",
       "None of the mentioned"
 
@@ -245,13 +260,14 @@
 
   {
     "id":"17",
-    "category" : " Basic Operators",
+    "category" : "Basic Operators",
     "instruction" : "What is the output of this expression, 3*1**3?" ,
     "expression" : "" ,
     "correct": "3",
     "options": [
       "27",
       "9",
+      "3",
       " 1"
 
     ],
@@ -261,15 +277,15 @@
 
   {
     "id":"18",
-    "category" : " Basic Operators",
+    "category" : "Basic Operators",
     "instruction" : "Which one of the following has the same precedence level?" ,
     "expression" : "" ,
-    "correct": " Addition and Subtraction",
+    "correct": "Addition and Subtraction",
     "options": [
       "Multiplication, Division and Addition",
       "Multiplication, Division, Addition and Subtraction",
-      " Addition and Multiplication",
-      ""
+      "Addition and Subtraction",
+      " Addition and Multiplication"
     ],
     "Explanation" : "“Addition and Subtraction” are at the same precedence level. Similarly, “Multiplication and Division” are at the same precedence level. However, Multiplication and Division operators are at a higher precedence level than Addition and Subtraction operators."
 
@@ -277,12 +293,13 @@
 
   {
     "id":"19",
-    "category" : " Basic Operators",
+    "category" : "Basic Operators TF",
     "instruction" : "he expression Int(x) implies that the variable x is converted to integer." ,
     "expression" : "" ,
     "correct": "True",
     "options": [
-      " False"
+      "True",
+      "False"
 
     ],
     "Explanation" : "None."
@@ -291,15 +308,15 @@
 
   {
     "id":"20",
-    "category" : " Basic Operators",
+    "category" : "Basic Operators",
     "instruction" : "Which one of the following has the highest precedence in the expression?" ,
     "expression" : "" ,
     "correct": "Parentheses",
     "options": [
-      "Exponential",
       "Addition",
-      "Multiplication"
-
+      "Multiplication",
+      "Exponential",
+      "Parentheses"
     ],
     "Explanation" : "Just remember: PEMDAS, that is, Parenthesis, Exponentiation, Division, Multiplication, Addition, Subtraction. Note that the precedence order of Division and Multiplication is the same. Likewise, the order of Addition and Subtraction is also the same."
 
@@ -307,38 +324,41 @@
 
   {
     "id":"21",
-    "category" : " Core Data types",
+    "category" : "Core Data types",
     "instruction" : "Which of these in not a core data type?" ,
     "expression" : "" ,
     "correct": "Class",
     "options": [
       " Lists",
       "Dictionary",
-      "Tuples"
+      "Tuples",
+      "Class"
     ],
     "Explanation" : "Class is a user defined data type."
 
   },
 
   {     "id":"22",
-    "category" : " Core Data types",
+    "category" : "Core Data types",
     "instruction" : "Given a function that does not return any value, What value is thrown by default when executed in shell." ,
     "expression" : "" ,
     "correct": "None",
     "options": [
       "int",
       "bool",
-      "void"
+      "void",
+      "None"
     ],
     "Explanation" : "Python shell throws a NoneType object back."
   },
 
   {     "id":"23",
-    "category" : " Core Data types",
+    "category" : "Core Data types",
     "instruction" : "What will be the output of the following Python code?" ,
     "expression" : ">>>str=\"hello\" >>>str[:2]  >>>" ,
-    "correct": " he",
+    "correct": "he",
     "options": [
+      "he",
       " lo",
       "olleh",
       "hello"
@@ -348,12 +368,13 @@
   },
 
   {   "id":"24",
-    "category" : " Core Data types",
-    "instruction" : " Which of the following will run without errors?" ,
+    "category" : "Core Data types",
+    "instruction" : "Which of the following will run without errors?" ,
     "expression" : "" ,
     "correct": "round(45.8)",
     "options": [
       " round(6352.898,2,5)",
+      "round(45.8)",
       " round()",
       "round(7463.123,2,1)"
     ],
@@ -362,11 +383,12 @@
   },
 
   {   "id":"25",
-    "category" : " Core Data types",
+    "category" : "Core Data types",
     "instruction" : "What is the return type of function id?" ,
     "expression" : "" ,
     "correct": "int",
     "options": [
+      "int",
       "float",
       "bool",
       "dict",
@@ -377,39 +399,42 @@
   },
 
   {     "id":"26",
-    "category" : " Core Data types",
+    "category" : "Core Data types",
     "instruction" : "n python we do not specify types, it is directly interpreted by the compiler, so consider the following operation to be performed." ,
     "expression" : ">>>x = 13 ? 2 objective is to make sure x has a integer value, select all that apply (python 3.xx)" ,
     "correct": "All of the mentioned",
     "options": [
       " 13 // 2",
       " int(13 / 2)",
-      " 13 % 2"
+      " 13 % 2",
+      "All of the mentioned"
     ],
     "Explanation" : "// is integer operation in python 3.0 and int(..) is a type cast operator."
 
   },
 
   {     "id":"27",
-    "category" : " Core Data types",
-    "instruction" : " What error occurs when you execute the following Python code snippet?" ,
+    "category" : "Core Data types",
+    "instruction" : "What error occurs when you execute the following Python code snippet?" ,
     "expression" : "apple = mango" ,
     "correct": "NameError",
     "options": [
       "SyntaxError",
       "ValueError",
+      "NameError",
       " TypeError"
     ],
     "Explanation" : "Mango is not defined hence name error."
 
   },
   {     "id":"28",
-    "category" : " Core Data types",
-    "instruction" : " What will be the output of the following Python code snippet?" ,
+    "category" : "Core Data types",
+    "instruction" : "What will be the output of the following Python code snippet?" ,
     "expression" : "def example(a):    a = a + '2'    a = a*2     return  >>>example(\"hello\")" ,
     "correct": "indentation Error",
     "options": [
       "cannot perform mathematical operation on strings",
+      "indentation Error",
       " hello2",
       " hello2hello2"
     ],
@@ -418,11 +443,12 @@
   },
 
   {     "id":"29",
-    "category" : " Core Data types",
-    "instruction" : " What data type is the object below?" ,
+    "category" : "Core Data types",
+    "instruction" : "What data type is the object below?" ,
     "expression" : "L = [1, 23, 'hello', 1]" ,
     "correct": "list",
     "options": [
+      "list",
       "dictionary",
       "array",
       "tuple"
@@ -432,13 +458,14 @@
   },
 
   {     "id":"30",
-    "category" : " Core Data types",
-    "instruction" : " In order to store values in terms of key and value we use what core data type." ,
+    "category" : "Core Data types",
+    "instruction" : "In order to store values in terms of key and value we use what core data type." ,
     "expression" : "" ,
     "correct": "dictionary",
     "options": [
       "list",
       " tuple",
+      "dictionary",
       "class"
     ],
     "Explanation" : "Dictionary stores values in terms of keys and values."
@@ -446,12 +473,13 @@
   },
 
   {     "id":"31",
-    "category" : " Numeric Types",
+    "category" : "Numeric Types",
     "instruction" : "What is the output of print 0.1 + 0.2 == 0.3?" ,
     "expression" : "" ,
     "correct": "False",
     "options": [
       "True",
+      "False",
       "Machine dependent",
       " Error"
     ],
@@ -460,13 +488,14 @@
   },
 
   {     "id":"32",
-    "category" : " Numeric Types",
+    "category" : "Numeric Types",
     "instruction" : "Which of the following is not a complex number?" ,
     "expression" : "" ,
     "correct": "k = 2 + 3l",
     "options": [
       "k = 2 + 3J",
       "k = complex(2, 3)",
+      "k = 2 + 3l",
       " k = 2 + 3j"
     ],
     "Explanation" : "l (or L) stands for long."
@@ -474,25 +503,27 @@
   },
 
   {     "id":"33",
-    "category" : " Numeric Types",
+    "category" : "Numeric Types",
     "instruction" : "What is the type of inf?" ,
     "expression" : "" ,
-    "correct": " Float",
+    "correct": "Float",
     "options": [
       "Boolean",
-      " Integer",
-      " Complex"
+      "Integer",
+      "Complex",
+      "Float"
     ],
     "Explanation" : "Infinity is a special case of floating point numbers. It can be obtained by float(‘inf’)."
 
   },
 
   {     "id":"34",
-    "category" : " Numeric Types",
+    "category" : "Numeric Types",
     "instruction" : "What does ~4 evaluate to?" ,
     "expression" : "" ,
     "correct": "-5",
     "options": [
+      "-5",
       "-4",
       " -3",
       " +3"
@@ -502,27 +533,29 @@
   },
 
   {     "id":"35",
-    "category" : " Numeric Types",
+    "category" : "Numeric Types",
     "instruction" : "What does ~~~~~~5 evaluate to?" ,
-    "expression" : "+5" ,
-    "correct": "",
+    "expression" : "" ,
+    "correct": "+5",
     "options": [
       "-11",
       "+11",
-      "-5"
+      "-5",
+      "+5"
     ],
     "Explanation" : "~x is equivalent to -(x+1)."
 
   },
 
   {     "id":"36",
-    "category" : " Numeric Types",
+    "category" : "Numeric Types",
     "instruction" : "Which of the following is incorrect?" ,
     "expression" : "" ,
-    "correct": " 03964",
+    "correct": "03964",
     "options": [
       "0b101",
-      " 0x4f5",
+      "0x4f5",
+      "03964",
       "19023"
     ],
     "Explanation" : "Numbers starting with a 0 are octal numbers but 9 isn’t allowed in octal numbers."
@@ -530,13 +563,14 @@
   },
 
   {     "id":"37",
-    "category" : " Numeric Types",
+    "category" : "Numeric Types",
     "instruction" : "What is the result of cmp(3, 1)?" ,
     "expression" : "" ,
-    "correct": " 1",
+    "correct": "1",
     "options": [
       "0",
-      " True",
+      "1",
+      "True",
       "False"
     ],
     "Explanation" : "cmp(x, y) returns 1 if x > y, 0 if x == y and -1 if x < y."
@@ -544,15 +578,15 @@
   },
 
   {     "id":"38",
-    "category" : " Numeric Types",
+    "category" : "Numeric Types",
     "instruction" : "cmp(x, y) returns 1 if x > y, 0 if x == y and -1 if x < y." ,
     "expression" : "" ,
-    "correct": " float(’12+34′)",
+    "correct": "float(’12+34′)",
     "options": [
       "float(‘inf’) ",
       "float(‘nan’)",
       " float(’56’+’78’)",
-      ""
+      "float(’12+34′)"
     ],
     "Explanation" : " ‘+’ cannot be converted to a float."
 
@@ -562,24 +596,26 @@
     "category" : " Numeric Types",
     "instruction" : "What is the result of round(0.5) – round(-0.5)?" ,
     "expression" : "" ,
-    "correct": " Value depends on Python version",
+    "correct": "Value depends on Python version",
     "options": [
       "1.0",
       "2.0",
-      " 0.0"
+      " 0.0",
+      "Value depends on Python version"
     ],
     "Explanation" : "The behavior of the round() function is different in Python 2 and Python 3. In Python 2, it rounds off numbers away from 0 when the number to be rounded off is exactly halfway through. round(0.5) is 1 and round(-0.5) is -1 whereas in Python 3, it rounds off numbers towards nearest even number when the number to be rounded off is exactly halfway through. See the below output. \n  Here’s the runtime output for Python version 2.7 interpreter.6   \n  $ python \n \n  Python 2.7.17 (default, Nov  7 2019, 10:07:09) \n   >>> round(0.5) \n  1.0  \n>>> round(-0.5) \n -1.0 \n>>>   \nIn the above output, you can see that the round() functions on 0.5 and -0.5 are moving away from 0 and hence “round(0.5) – (round(-0.5)) = 1 – (-1) = 2”  \n\nHere’s the runtime output for Python version 3.6 interpreter. \n\n $ python3   \nPython 3.6.8 (default, Oct  7 2019, 12:59:55) \n >>> round(0.5) \n 0 \n >>> round(-0.5) \n 0 \n>>> round(2.5) \n 2 \n >>> round(3.5) \n 4 \n >>> \n In the above output, you can see that the round() functions on 0.5 and -0.5 are moving towards 0 and hence “round(0.5) – (round(-0.5)) = 0 – 0 = 0“. Also note that the round(2.5) is 2 (which is an even number) whereas round(3.5) is 4 (which is an even number)."
 
   },
 
   {     "id":"40",
-    "category" : " Numeric Types",
+    "category" : "Numeric Types",
     "instruction" : "What does 3 ^ 4 evaluate to?" ,
     "expression" : "" ,
-    "correct": " 7",
+    "correct": "7",
     "options": [
       "81",
       " 12",
+      "7",
       "0.75"
     ],
     "Explanation" : ": ^ is the Binary XOR operator."
@@ -587,7 +623,7 @@
   },
 
   {     "id":"41",
-    "category" : " Precedence and Associativity – 1",
+    "category" : "Precedence and Associativity –1 TF",
     "instruction" : "The value of the expressions 4/(3*(2-1)) and 4/3*(2-1) is the same." ,
     "expression" : "" ,
     "correct": "True",
@@ -600,11 +636,12 @@
 
   {
     "id":"42",
-    "category" : " Precedence and Associativity – 1",
+    "category" : "Precedence and Associativity – 1",
     "instruction" : "What will be the value of the following Python expression?" ,
     "expression" : "4 + 3 % 5" ,
     "correct": " 7",
     "options": [
+      " 7",
       " 4",
       "2",
       " 0"
@@ -615,13 +652,14 @@
 
   {
     "id":"43",
-    "category" : " Precedence and Associativity – 1",
-    "instruction" : " Evaluate the expression given below if A = 16 and B = 15." ,
+    "category" : "Precedence and Associativity – 1",
+    "instruction" : "Evaluate the expression given below if A = 16 and B = 15." ,
     "expression" : "A % B // A" ,
-    "correct": " 0",
+    "correct": "0",
     "options": [
-      " 0.0",
-      " 1.0",
+      "0.0",
+      "1.0",
+      "0",
       "1"
     ],
     "Explanation" : "The above expression is evaluated as: 16%15//16, which is equal to 1//16, which results in 0."
@@ -630,7 +668,7 @@
 
   {
     "id":"44",
-    "category" : " Precedence and Associativity – 1",
+    "category" : "Precedence and Associativity – 1",
     "instruction" : "Which of the following operators has its associativity from right to left?" ,
     "expression" : "" ,
     "correct": "**",
@@ -638,7 +676,7 @@
       "+",
       "//",
       " %",
-      ""
+      "**"
     ],
     "Explanation" : "All of the operators shown above have associativity from left to right, except exponentiation operator (**) which has its associativity from right to left."
 
@@ -646,15 +684,15 @@
 
   {
     "id":"45",
-    "category" : " Precedence and Associativity – 1",
-    "instruction" : " What will be the value of x in the following Python expression?" ,
+    "category" : "Precedence and Associativity – 1",
+    "instruction" : "What will be the value of x in the following Python expression?" ,
     "expression" : "x = int(43.55+2/2)" ,
     "correct": "44",
     "options": [
       "22",
       " 23",
       "43",
-      ""
+      "44"
     ],
     "Explanation" : "The expression shown above is an example of explicit conversion. It is evaluated as int(43.55+1) = int(44.55) = 44. Hence the result of this expression is 44."
 
@@ -662,14 +700,15 @@
 
   {
     "id":"46",
-    "category" : " Precedence and Associativity – 1",
+    "category" : "Precedence and Associativity – 1",
     "instruction" : "What is the value of the following expression?" ,
     "expression" : "2+4.00, 2**4.0" ,
     "correct": "(6.0, 16.0)",
     "options": [
       "(6.00, 16.00)",
       " (6, 16)",
-      " (6.00, 16.0)"
+      " (6.00, 16.0)",
+      "(6.0, 16.0)"
 
     ],
     "Explanation" : " The result of the expression shown above is (6.0, 16.0). This is because the result is automatically rounded off to one decimal place."
@@ -678,14 +717,15 @@
 
   {
     "id":"47",
-    "category" : " Precedence and Associativity – 1",
+    "category" : "Precedence and Associativity – 1",
     "instruction" : "Which of the following is the truncation division operator?" ,
     "expression" : "" ,
-    "correct": " //",
+    "correct": "//",
     "options": [
       " /",
+      "//",
       "%",
-      " |"
+      "|"
     ],
     "Explanation" : "// is the operator for truncation division. It is called so because it returns only the integer part of the quotient, truncating the decimal part. For example: 20//3 = 6."
 
@@ -693,13 +733,14 @@
 
   {
     "id":"48",
-    "category" : " Precedence and Associativity – 1",
+    "category" : "Precedence and Associativity – 1",
     "instruction" : "What are the values of the following Python expressions?" ,
     "expression" : " 2**(3**2) (2**3)**2  2**3**2" ,
     "correct": "512, 64, 512",
     "options": [
       " 64, 512, 64",
       "64, 64, 64",
+      "512, 64, 512",
       " 512, 512, 512"
     ],
     "Explanation" : "Expression 1 is evaluated as: 2**9, which is equal to 512. Expression 2 is evaluated as 8**2, which is equal to 64. The last expression is evaluated as 2**(3**2). This is because the associativity of ** operator is from right to left. Hence the result of the third expression is 512."
@@ -714,6 +755,7 @@
     "correct": "(1.0, 4.0)",
     "options": [
       " (1.0, 1.0)",
+      "(1.0, 4.0)",
       " (4.0. 1.0)",
       "(4.0, 4.0)"
     ],
@@ -723,12 +765,13 @@
 
   {
     "id":"50",
-    "category" : " Precedence and Associativity – 1",
+    "category" : "Precedence and Associativity – 1",
     "instruction" : "What is the value of the following expression?" ,
     "expression" : "float(22//3+3/3)" ,
-    "correct": " 8.0",
+    "correct": "8.0",
     "options": [
       "8",
+      "8.0",
       "8.3",
       "8.33"
     ],
@@ -742,11 +785,12 @@
     "category" : "Precedence and Associativity – 2",
     "instruction" : "What will be the output of the following Python expression?" ,
     "expression" : "print(4.00/(2.0+2.0))" ,
-    "correct": " 1.0",
+    "correct": "1.0",
     "options": [
       " Error",
       "1.00",
-      "1.00"
+      "1.0",
+      "1"
     ],
     "Explanation" : "The result of the expression shown above is 1.0 because print rounds off digits."
 
@@ -755,13 +799,14 @@
   {
     "id":"52",
     "category" : "Precedence and Associativity – 2",
-    "instruction" : " What will be the value of X in the following Python expression?" ,
+    "instruction" : "What will be the value of X in the following Python expression?" ,
     "expression" : "X = 2+9*((3*12)-8)/10" ,
     "correct": "27.2",
     "options": [
-      "30.0",
       " 30.8",
-      " 28.4"
+      "30.0",
+      " 28.4",
+      "27.2"
     ],
     "Explanation" : " The expression shown above is evaluated as: 2+9*(36-8)/10, which simplifies to give 2+9*(2.8), which is equal to 2+25.2 = 27.2. Hence the result of this expression is 27.2."
 
@@ -770,10 +815,11 @@
   {
     "id":"53",
     "category" : "Precedence and Associativity – 2",
-    "instruction" : " Which of the following expressions involves coercion when evaluated in Python?" ,
+    "instruction" : "Which of the following expressions involves coercion when evaluated in Python?" ,
     "expression" : "" ,
     "correct": "1.7 % 2",
     "options": [
+      "1.7 % 2",
       "4.7 – 1.5",
       " 7.9 * 6.3",
       " 3.4 + 4.6"
@@ -787,11 +833,12 @@
     "category" : "Precedence and Associativity – 2",
     "instruction" : "What will be the output of the following Python expression?" ,
     "expression" : "24//6%3, 24//4//2" ,
-    "correct": " (1,3)",
+    "correct": "(1,3)",
     "options": [
-      " (0,3)",
-      " (1,0)",
-      " (3,1)"
+      "(0,3)",
+      "(1,0)",
+      "(1,3)",
+      "(3,1)"
     ],
     "Explanation" : "The expressions are evaluated as: 4%3 and 6//2 respectively. This results in the answer (1,3). This is because the associativity of both of the expressions shown above is left to right."
 
@@ -805,6 +852,7 @@
     "correct": "**",
     "options": [
       " <<, >>",
+      "**",
       " |",
       " %"
     ],
@@ -815,11 +863,12 @@
   {
     "id":"56",
     "category" : "Precedence and Associativity – 2",
-    "instruction" : " What will be the value of the following Python expression?" ,
+    "instruction" : "What will be the value of the following Python expression?" ,
     "expression" : "float(4+int(2.39)%2)" ,
     "correct": "4.0",
     "options": [
       "5.0",
+      "4.0",
       " 5",
       " 4"
     ],
@@ -832,11 +881,12 @@
     "category" : "Precedence and Associativity – 2",
     "instruction" : "Which of the following expressions is an example of type conversion?" ,
     "expression" : "" ,
-    "correct": " 4.0 + float(3)",
+    "correct": "4.0 + float(3)",
     "options": [
       "5.3 + 6.3",
-      " 5.0 + 3",
-      " 3 + 7"
+      "5.0 + 3",
+      "4.0 + float(3)",
+      "3 + 7"
     ],
     "Explanation" : "Type conversion is nothing but explicit conversion of operands to a specific type. Options 5.3 + 6.3 and 5.0 + 3 are examples of implicit conversion whereas option 4.0 + float(3) is an example of explicit conversion or type conversion."
 
@@ -851,7 +901,8 @@
     "options": [
       "float(‘10’)",
       " int(‘10’)",
-      "float(’10.8’)"
+      "float(’10.8’)",
+      "int(’10.8’)"
     ],
     "Explanation" : "All of the above examples show explicit conversion. However the expression int(’10.8’) results in an error."
 
@@ -860,13 +911,14 @@
   {
     "id":"59",
     "category" : "Precedence and Associativity – 2",
-    "instruction" : " What will be the value of the following Python expression?" ,
+    "instruction" : "What will be the value of the following Python expression?" ,
     "expression" : "4+2**5//10" ,
-    "correct": " 7",
+    "correct": "7",
     "options": [
-      " 3",
+      "3",
+      "7",
       "77",
-      " 0"
+      "0"
     ],
     "Explanation" : " The order of precedence is: **, //, +. The expression 4+2**5//10 is evaluated as 4+32//10, which is equal to 4+3 = 7. Hence the result of the expression shown above is 7."
 
@@ -874,15 +926,13 @@
 
   {
     "id":"60",
-    "category" : "Precedence and Associativity – 2",
+    "category" : "Precedence and Associativity – 2 TF",
     "instruction" : "The expression 2**2**3 is evaluates as: (2**2)**3." ,
     "expression" : "" ,
-    "correct": " False",
+    "correct": "False",
     "options": [
       "True",
-      "",
-      "",
-      ""
+      "False"
     ],
     "Explanation" : "The value of the expression (2**2)**3 = 4**3 = 64. When the expression 2**2**3 is evaluated in python, we get the result as 256, because this expression is evaluated as 2**(2**3). This is because the associativity of exponentiation operator (**) is from right to left and not from left to right."
 
@@ -896,6 +946,7 @@
     "correct": "4",
     "options": [
       "8",
+      "4",
       " 1",
       " 2"
     ],
@@ -906,12 +957,13 @@
   {
     "id":"62",
     "category" : "Bitwise – 1",
-    "instruction" : " What will be the output of the following Python expression?" ,
+    "instruction" : "What will be the output of the following Python expression?" ,
     "expression" : "bin(29)" ,
     "correct": "‘0b11101’",
     "options": [
       "‘0b10111’",
       " ‘0b11111’",
+      "‘0b11101’",
       "‘0b11011’"
     ],
     "Explanation" : "The binary form of the number 29 is 11101. Hence the output of this expression is ‘0b11101’"
@@ -925,6 +977,7 @@
     "expression" : "x>>2" ,
     "correct": "8",
     "options": [
+      "8",
       " 4",
       "2",
       " 1"
@@ -942,6 +995,7 @@
     "options": [
       " 11",
       "13",
+      "1011",
       "1101"
     ],
     "Explanation" : "The result of the expression shown will be 1011. This is because we have not specified the base in this expression. Hence it automatically takes the base as 10."
@@ -953,8 +1007,9 @@
     "category" : "Bitwise – 1",
     "instruction" : "To find the decimal value of 1111, that is 15, we can use the function:" ,
     "expression" : "" ,
-    "correct": " int(‘1111’,2)",
+    "correct": "int(‘1111’,2)",
     "options": [
+      "int(‘1111’,2)",
       "int(1111,10)",
       "int(‘1111’,10)",
       "int(1111,2)"
@@ -968,11 +1023,12 @@
     "category" : "Bitwise – 1",
     "instruction" : "What will be the output of the following Python expression if x=15 and y=12?" ,
     "expression" : "x & y" ,
-    "correct": " 12",
+    "correct": "12",
     "options": [
       " b1101",
       "0b1101",
-      "1101"
+      "1101",
+      "12"
     ],
     "Explanation" : "The symbol ‘&’ represents bitwise AND. This gives 1 if both the bits are equal to 1, else it gives 0. The binary form of 15 is 1111 and that of 12 is 1100. Hence on performing the bitwise AND operation, we get 1100, which is equal to 12."
 
@@ -981,11 +1037,12 @@
   {
     "id":"67",
     "category" : "Bitwise – 1",
-    "instruction" : " Which of the following expressions results in an error?" ,
+    "instruction" : "Which of the following expressions results in an error?" ,
     "expression" : "" ,
-    "correct": " int(1011,2)",
+    "correct": "int(1011,2)",
     "options": [
       " int(1011)",
+      "int(1011,2)",
       " int(‘1011’,23)",
       "int(‘1011’)"
     ],
@@ -1000,6 +1057,7 @@
     "expression" : "" ,
     "correct": "^",
     "options": [
+      "^",
       " &",
       " |",
       " |"
@@ -1012,13 +1070,14 @@
   {
     "id":"69",
     "category" : "Bitwise – 1",
-    "instruction" : " What is the value of the following Python expression?" ,
+    "instruction" : "What is the value of the following Python expression?" ,
     "expression" : "bin(0x8)" ,
-    "correct": " ‘0b1000’",
+    "correct": "‘0b1000’",
     "options": [
       "1000",
-      " 8",
-      " ‘0bx1000’"
+      "8",
+      "‘0b1000’",
+      "‘0bx1000’"
     ],
     "Explanation" : "The prefix 0x specifies that the value is hexadecimal in nature. When we convert this hexadecimal value to binary form, we get the result as: ‘0b1000’."
 
@@ -1030,10 +1089,11 @@
     "category" : "Bitwise – 1",
     "instruction" : "What will be the output of the following Python expression?" ,
     "expression" : "0x35 | 0x75" ,
-    "correct": " 117",
+    "correct": "117",
     "options": [
       "115",
       "116",
+      "117",
       "118"
     ],
     "Explanation" : "The binary value of 0x35 is 110101 and that of 0x75 is 1110101. On OR-ing these two values we get the output as: 1110101, which is equal to 117. Hence the result of the above expression is 117."
@@ -1042,13 +1102,13 @@
 
   {
     "id":"71",
-    "category" : "Bitwise – 2",
+    "category" : "Bitwise – 2 TF",
     "instruction" : "It is not possible for the two’s complement value to be equal to the original value in any case." ,
     "expression" : "" ,
-    "correct": " False",
+    "correct": "False",
     "options": [
       "True",
-      ""
+      "False"
     ],
     "Explanation" : "n most cases the value of two’s complement is different from the original value. However, there are cases in which the two’s complement value may be equal to the original value. For example, the two’s complement of 10000000 is also equal to 10000000. Hence the statement is false."
 
@@ -1060,9 +1120,10 @@
     "category" : "Bitwise – 2",
     "instruction" : "The one’s complement of 110010101 is:" ,
     "expression" : "" ,
-    "correct": " 001101010",
+    "correct": "001101010",
     "options": [
       " 110010101",
+      "001101010",
       "001101011",
       "110010100"
     ],
@@ -1076,13 +1137,14 @@
     "category" : "Bitwise – 2",
     "instruction" : "Bitwise _________ gives 1 if either of the bits is 1 and 0 when both of the bits are 1." ,
     "expression" : "" ,
-    "correct": " XOR",
+    "correct": "XOR",
     "options": [
       "OR",
+      "XOR",
       " AND",
       " NOT"
     ],
-    "Explanation" : " Bitwise XOR gives 1 if either of the bits is 1 and 0 when both of the bits are 1."
+    "Explanation" : "Bitwise XOR gives 1 if either of the bits is 1 and 0 when both of the bits are 1."
 
   },
 
@@ -1091,10 +1153,11 @@
     "category" : "Bitwise – 2",
     "instruction" : "What will be the output of the following Python expression?" ,
     "expression" : "4^12" ,
-    "correct": " 8",
+    "correct": "8",
     "options": [
       "2",
       "4",
+      "8",
       "12"
     ],
     "Explanation" : ""
@@ -1111,6 +1174,7 @@
     "options": [
       "10",
       " 2",
+      "1",
       "0"
     ],
     "Explanation" : "Any odd number on being AND-ed with 1 always gives 1. Any even number on being AND-ed with this value always gives 0."
@@ -1126,8 +1190,9 @@
     "correct": "0b10000b1000",
     "options": [
       "0b10000",
-      " 0b10001000",
-      "0b1000b1000"
+      "0b10001000",
+      "0b1000b1000",
+      "0b10000b1000"
     ],
     "Explanation" : "The output of bin(10-2) = 0b1000 and that of bin(12^4) is ob1000. Hence the output of the above expression is: 0b10000b1000."
 
@@ -1141,6 +1206,7 @@
     "expression" : "" ,
     "correct": "a<<2",
     "options": [
+      "a<<2",
       " a<<4",
       "a>>2",
       " a>>4"
@@ -1155,10 +1221,11 @@
     "category" : "Bitwise – 2",
     "instruction" : "What will be the output of the following Python code if a=10 and b =20?" ,
     "expression" : "a=10 \nb=20  \na=a^b    \nb=a^b \na=a^b  \nprint(a,b)" ,
-    "correct": " 20 10",
+    "correct": "20 10",
     "options": [
       "10 20",
-      " 10 10",
+      "10 10",
+      "20 10",
       "20 20"
     ],
     "Explanation" : "The code shown above is used to swap the contents of two memory locations using bitwise X0R operator. Hence the output of the code shown above is: 20 10."
@@ -1173,9 +1240,10 @@
     "expression" : "" ,
     "correct": "11010100",
     "options": [
-      " 1011011",
+      "1011011",
       "11101011",
-      " 10110011"
+      "10110011",
+      "11010100"
     ],
     "Explanation" : "The binary form of -44 is 00101100. The one’s complement of this value is 11010011. On adding one to this we get: 11010100 (two’s complement)."
 
@@ -1187,11 +1255,12 @@
     "category" : "Bitwise – 2",
     "instruction" : "What will be the output of the following Python expression?" ,
     "expression" : "~100?" ,
-    "correct": " -101",
+    "correct": "-101",
     "options": [
       "101",
+      "-101",
       "100",
-      " -100"
+      "-100"
     ],
     "Explanation" : " Suppose we have an expression ~A. This is evaluated as: -A – 1. Therefore, the expression ~100 is evaluated as -100 – 1, which is equal to -101."
 
@@ -1203,12 +1272,12 @@
     "category" : "Boolean",
     "instruction" : " What will be the output of the following Python code snippet?" ,
     "expression" : "bool(‘False’)  bool()" ,
-    "correct": " True False",
+    "correct": "True False",
     "options": [
       " False  False",
       " False True",
-      " True  True",
-      ""
+      "True False",
+      " True  True"
     ],
     "Explanation" : "The Boolean function returns true if the argument passed to the bool function does not amount to zero. In the first example, the string ‘False’ is passed to the function bool. This does not amount to zero and hence the output is true. In the second function, an empty list is passed to the function bool. Hence the output is false."
 
@@ -1220,10 +1289,11 @@
     "category" : "Boolean",
     "instruction" : "What will be the output of the following Python code snippet?" ,
     "expression" : "['hello', 'morning'][bool('')]" ,
-    "correct": " hello",
+    "correct": "hello",
     "options": [
-      " error",
-      " no output",
+      "hello",
+      "error",
+      "no output",
       "morning"
     ],
     "Explanation" : " The line of code shown above can be simplified to state that ‘hello’ should be printed if the argument passed to the Boolean function amounts to zero, else ‘morning’ will be printed."
@@ -1240,8 +1310,8 @@
     "options": [
       "True True",
       "False True",
-      "False False",
-      ""
+      "True False",
+      "False False"
     ],
     "Explanation" : " The function not returns true if the argument amounts to false, and false if the argument amounts to true. Hence the first function returns false, and the second function returns false."
 
@@ -1250,13 +1320,14 @@
   {
     "id":"84",
     "category" : "Boolean",
-    "instruction" : " What will be the output of the following Python code?" ,
+    "instruction" : "What will be the output of the following Python code?" ,
     "expression" : "['f', 't'][bool('spam')]" ,
-    "correct": " t",
+    "correct": "t",
     "options": [
-      " f",
+      "f",
+      "t",
       "No output",
-      " Error"
+      "Error"
     ],
     "Explanation" : "The line of code can be translated to state that ‘f’ is printed if the argument passed to the Boolean function amount to zero. Else ‘t’ is printed. The argument given to the Boolean function in the above case is ‘spam’, which does not amount to zero. Hence the output is t."
 
@@ -1268,9 +1339,10 @@
     "category" : "Boolean",
     "instruction" : "What will be the output of the following Python code?" ,
     "expression" : "l=[1, 0, 2, 0, 'hello', '', []]  list(filter(bool, l))" ,
-    "correct": " [1, 2, ‘hello’]",
+    "correct": "[1, 2, ‘hello’]",
     "options": [
       "Error",
+      "[1, 2, ‘hello’]",
       "[1, 0, 2, ‘hello’, ”, []]",
       "[1, 0, 2, 0, ‘hello’, ”, []]"
     ],
@@ -1283,10 +1355,11 @@
     "category" : "Boolean",
     "instruction" : "What will be the output of the following Python code if the system date is 21st June, 2017 (Wednesday)?" ,
     "expression" : "[] or {}  {} or []" ,
-    "correct": "   {}  []",
+    "correct": "{}  []",
     "options": [
       "[]  {}",
       "[] []",
+      "{}  []",
       "{} {}",
       ""
     ],
@@ -1299,11 +1372,12 @@
     "category" : "Boolean",
     "instruction" : "What will be the output of the following Python code?" ,
     "expression" : "class Truth: pass x=Truth() bool(x)" ,
-    "correct": " true",
+    "correct": "true",
     "options": [
       "pass",
-      " false",
-      " false"
+      "true",
+      "false",
+      "fail"
     ],
     "Explanation" : "If the truth method is not defined, the object is considered true. Hence the output of the code shown above is true."
 
@@ -1312,15 +1386,16 @@
   {
     "id":"88",
     "category" : "Boolean",
-    "instruction" : " What will be the output of the following Python code?" ,
+    "instruction" : "What will be the output of the following Python code?" ,
     "expression" : "if (9 < 0) and (0 < -9)  print(\"hello\") elif (9 > 0) or False:  print(\"good\")  else: print(\"bad\")" ,
     "correct": "good",
     "options": [
       "error",
       "hello",
-      " bad"
+      "good",
+      "bad"
     ],
-    "Explanation" : " The code shown above prints the appropriate option depending on the conditions given. The condition which matches is (9>0), and hence the output is: good."
+    "Explanation" : "The code shown above prints the appropriate option depending on the conditions given. The condition which matches is (9>0), and hence the output is: good."
 
   },
 
@@ -1331,6 +1406,7 @@
     "expression" : "" ,
     "correct": "not(-6>10 or-6==10)",
     "options": [
+      "not(-6>10 or-6==10)",
       " not(-6<0 or-6>10",
       "-6>=0 and -6<=10",
       "not(-6<10 or-6==10)"
@@ -1344,9 +1420,10 @@
     "category" : "Boolean",
     "instruction" : "What will be the output of the following Python code snippet?" ,
     "expression" : "not(10<20) and not(10>30)" ,
-    "correct": " False",
+    "correct": "False",
     "options": [
       "True",
+      "False",
       "Error",
       "No output"
     ],
@@ -1364,7 +1441,7 @@
       "00000hi",
       "0000hi",
       "hi000",
-      ""
+      "error"
     ],
     "Explanation" : "The code snippet shown above results in an error because the above formatting option works only if ‘X’ is a number. Since in the above case ‘X’ is a string, an error is thrown."
 
@@ -1373,12 +1450,13 @@
   {
     "id":"92",
     "category" : "Formatting – 1",
-    "instruction" : " What will be the output of the following Python code snippet?" ,
-    "expression" : "X=”san-foundry”  print(“%56s”,X)" ,
-    "correct": "56 blank spaces before san-foundry",
+    "instruction" : "What will be the output of the following Python code snippet?" ,
+    "expression" : "X=”p-quiz”  print(“%56s”,X)" ,
+    "correct": "56 blank spaces before p-quiz",
     "options": [
-      "56 blank spaces before san and foundry",
-      "56 blank spaces after san-foundry",
+      "56 blank spaces before p and quiz",
+      "56 blank spaces after p-quiz",
+      "56 blank spaces before p-quiz",
       "no change"
     ],
     "Explanation" : "The formatting option print(“%Ns”,X) helps us add ‘N’ number of spaces before a given string ‘X’. Hence the output for the code snippet shown above will be 56 blank spaces before the string “san-foundry”."
@@ -1392,6 +1470,7 @@
     "expression" : "print(\"%-06d\"%x)" ,
     "correct": "456",
     "options": [
+      "456",
       "000456",
       "456000",
       "error"
@@ -1406,9 +1485,10 @@
     "category" : "Formatting – 1",
     "instruction" : "What will be the output of the following Python expression if X=345?" ,
     "expression" : "print(“%06d”%X)" ,
-    "correct": " 000345",
+    "correct": "000345",
     "options": [
-      " 345000",
+      "000345",
+      "345000",
       "000000345",
       "345000000"
     ],
@@ -1421,11 +1501,12 @@
     "category" : "Formatting – 1",
     "instruction" : "Which of the following formatting options can be used in order to add ‘n’ blank spaces after a given string ‘S’?" ,
     "expression" : "" ,
-    "correct": " print(“%-ns”%S)",
+    "correct": "print(“%-ns”%S)",
     "options": [
       "print(“%ns”%S)",
+      "print(“%-ns”%S)",
       "print(“-ns”%S)",
-      " print(“-ns”%S)"
+      "print(“-ns”%S)"
     ],
     "Explanation" : "In order to add ‘n’ blank spaces after a given string ‘S’, we use the formatting option:(“%-ns”%S)."
 
@@ -1438,8 +1519,9 @@
     "expression" : "print(\"-%06d\"%x)" ,
     "correct": "–00122",
     "options": [
-      " -000122",
+      "-000122",
       "000122",
+      "–00122",
       "-00122"
     ],
     "Explanation" : "The given number is -122. Here the total number of digits (including the negative sign) should be 6 according to the expression. In addition to this, there is a negative sign in the given expression. Hence the output will be – -00122."
@@ -1451,10 +1533,11 @@
     "category" : "Formatting – 1",
     "instruction" : "What will be the output of the following Python expression if the value of x is 34?" ,
     "expression" : "print(“%f”%x)" ,
-    "correct": " 34.000000",
+    "correct": "34.000000",
     "options": [
-      " 34.00",
-      " 34.0000",
+      "34.00",
+      "34.0000",
+      "34.000000",
       "34.00000000"
     ],
     "Explanation" : "The expression shown above normally returns the value with 6 decimal points if it is not specified with any number. Hence the output of this expression will be: 34.000000 (6 decimal points)."
@@ -1466,10 +1549,11 @@
     "category" : "Formatting – 1",
     "instruction" : "What will be the output of the following Python expression if x=56.236?" ,
     "expression" : "print(\"%.2f\"%x)" ,
-    "correct": " 56.24",
+    "correct": "56.24",
     "options": [
-      " 56.00",
+      "56.00",
       "56.23",
+      "56.24",
       "0056.236"
     ],
     "Explanation" : " The expression shown above rounds off the given number to the number of decimal places specified. Since the expression given specifies rounding off to two decimal places, the output of this expression will be 56.24. Had the value been x=56.234 (last digit being any number less than 5), the output would have been 56.23."
@@ -1484,6 +1568,7 @@
     "correct": "22.19",
     "options": [
       "22.1900",
+      "22.19",
       "22.00000",
       "22.20"
     ],
@@ -1493,32 +1578,18 @@
 
   {
     "id":"100",
-    "category" : "Formatting – 1",
+    "category" : "Formatting – 1 TF",
     "instruction" : "The expression shown below results in an error." ,
     "expression" : "print(\"-%5d0\",989)" ,
-    "correct": " False",
+    "correct": "False",
     "options": [
-      "True"
+      "True",
+      "False"
     ],
     "Explanation" : " The expression shown above does not result in an error. The output of this expression is -%5d0 989. Hence this statement is incorrect."
 
   },
 
-  {
-    "id":"101",
-    "category" : "",
-    "instruction" : "" ,
-    "expression" : "" ,
-    "correct": "",
-    "options": [
-      "",
-      "",
-      "",
-      ""
-    ],
-    "Explanation" : ""
-
-  },
 
   {
     "id":"",
@@ -1537,11 +1608,13 @@
   },
 
   {
+    "id":"101",
     "category" : "String - 8",
     "instruction" : "What will be the output of the following Python code?" ,
     "expression" : "print(\"Hello {name1} and {name2}\".format(name1='foo', name2='bin'))",
-    "correct": " Hello foo and bin",
+    "correct": "Hello foo and bin",
     "options": [
+      "Hello foo and bin",
       "Hello {name1} and {name2}",
       "Error",
       "Hello and"
