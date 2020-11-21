@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/splashFragment">
+    app:startDestination="@id/homeFragment">
 
 
     <fragment
@@ -50,10 +50,33 @@
         android:id="@+id/homeFragment"
         android:name="io.github.bukunmiola.pquiz.ui.home.HomeFragment"
         android:label="fragment_home"
-        tools:layout="@layout/home_fragment" >
-    <action
-        android:id="@+id/action_homeFragment_to_signInFragment"
-        app:destination="@id/signInFragment" />
+        tools:layout="@layout/fragment_home" >
+
+        <action
+            android:id="@+id/action_homeFragment_to_questionFragment"
+            app:destination="@id/questionFragment" />
+
+        <action
+            android:id="@+id/action_homeFragment_to_signInFragment"
+            app:destination="@id/signInFragment" />
+        <argument
+            app:argType="string"
+            android:name="username"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/questionFragment"
+        android:name="io.github.bukunmiola.pquiz.ui.questions.QuestionsFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/questions_fragment" >
+
+        <action
+            android:id="@+id/action_questionFragment_to_homeFragment"
+            app:destination="@id/homeFragment"/>
+        <argument android:name="questions"
+            app:argType="integer" />
+
+
     </fragment>
 
 

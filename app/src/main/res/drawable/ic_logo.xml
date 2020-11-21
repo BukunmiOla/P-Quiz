@@ -4,5 +4,5 @@
         android:topLeftRadius="250dp" android:topRightRadius="80dp" />
     <padding android:bottom="10dp" android:left="10dp" android:right="10dp" android:top="10dp"/>
     <stroke android:width="3dp" android:dashGap="5dp"
-        android:dashWidth="20dp" android:color="#C40CE4"/>
+        android:dashWidth="20dp" android:color="#000000"/>
 </shape>

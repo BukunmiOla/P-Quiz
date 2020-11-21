@@ -13,6 +13,7 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.navigation.ActionOnlyNavDirections
 import androidx.navigation.NavDirections
+import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
 import com.google.android.material.textfield.TextInputEditText
 import com.google.firebase.auth.FirebaseAuth
@@ -26,7 +27,6 @@ class SignUpFragment : Fragment() {
     private var mAuth: FirebaseAuth? = null
     private lateinit var emailEt  : TextInputEditText
     private lateinit var nameEt  : TextInputEditText
-    private lateinit var  dateOfBirthEt : TextInputEditText
     private lateinit var passwordEt  : TextInputEditText
     private lateinit var confirmPasswordEt  : TextInputEditText
 
@@ -38,15 +38,6 @@ class SignUpFragment : Fragment() {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_sign_up, container, false)
     }
-
-    companion object {
-        fun actionSignUpFragmentToHomeFragment(): NavDirections =
-            ActionOnlyNavDirections(R.id.action_signUpFragment_to_homeFragment)
-
-        fun actionSignUpFragmentToSignInFragment(): NavDirections =
-            ActionOnlyNavDirections(R.id.action_signUpFragment_to_signInFragment)
-    }
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
@@ -58,15 +49,11 @@ class SignUpFragment : Fragment() {
     }
 
     private fun goToSignIn() {
-        val action =
-            actionSignUpFragmentToSignInFragment()
-        NavHostFragment.findNavController(this).navigate(action)
+        view?.findNavController()?.navigate(SignUpFragmentDirections.actionSignUpFragmentToSignInFragment())
     }
 
     private fun goToHome() {
-        val action =
-            actionSignUpFragmentToHomeFragment()
-        NavHostFragment.findNavController(this).navigate(action)
+        view?.findNavController()?.navigate(SignUpFragmentDirections.actionSignUpFragmentToHomeFragment("yo"))
     }
     override fun onStart() {
         super.onStart()
@@ -81,7 +68,6 @@ class SignUpFragment : Fragment() {
     private  fun signUp(){
         emailEt = view?.findViewById(R.id.mail)!!
         nameEt = view?.findViewById(R.id.fullName)!!
-        dateOfBirthEt = view?.findViewById(R.id.date_of_birth)!!
         passwordEt = view?.findViewById(R.id.password)!!
         confirmPasswordEt = view?.findViewById(R.id.confirm_password)!!
 
@@ -140,11 +126,7 @@ class SignUpFragment : Fragment() {
         } else if (passwordEt.text.toString() != confirmPasswordEt.text.toString()) {
             confirmPasswordEt.error = "password do not match"
             return false
-        } else if (isDateInvalid(dateOfBirthEt)) {
-            dateOfBirthEt.error = "Invalid input!"
-            return false
         }
-
 
         return true
     }
@@ -152,13 +134,9 @@ class SignUpFragment : Fragment() {
     private fun isEmailValid(emailEt: TextInputEditText): Boolean {
         return Patterns.EMAIL_ADDRESS.matcher(emailEt.text.toString()).matches()
     }
+
     private fun isNameInvalid(nameEt: TextInputEditText): Boolean {
         return !Pattern.compile("[a-z A-z]{0,256}").matcher(nameEt.text.toString()).matches()
-    }
-
-
-    private fun isDateInvalid(dateOfBirthEt: TextInputEditText): Boolean {
-        return !Pattern.compile("[/0-9]{0,10}").matcher(dateOfBirthEt.text.toString()).matches()
     }
 
 }

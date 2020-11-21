@@ -562,7 +562,6 @@
       }
       ]
     },
-
     {
       "id":"5",
       "category" : "Precedence and Associativity –1 TF",
@@ -708,8 +707,6 @@
       }
       ]
     },
-    
-
     {
       "id":"6",
       "category" : "Precedence and Associativity – 2",

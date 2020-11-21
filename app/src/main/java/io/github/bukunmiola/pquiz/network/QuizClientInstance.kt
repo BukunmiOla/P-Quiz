@@ -18,7 +18,7 @@ object QuizClientInstance {
         return httpClient.build()
     }
 
-    public  fun getClientInstance(): Retrofit? {
+    public  fun getClientInstance(): Retrofit {
         return Retrofit.Builder()
             .baseUrl("https://bukunmiola.github.io")
             .client(getHttpClient())
