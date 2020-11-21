@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.ActionOnlyNavDirections
 import androidx.navigation.NavDirections
+import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment.findNavController
 import com.google.firebase.auth.FirebaseAuth
 import io.github.bukunmiola.pquiz.R
@@ -24,20 +25,12 @@ class SplashFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_splash, container, false)
     }
 
-    companion object {
-
-        fun actionSplashInFragmentToSignInFragment(): NavDirections =
-            ActionOnlyNavDirections(R.id.action_splashFragment_to_signInFragment)
-    }
-
    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
 
         Handler().postDelayed({
-            val action =
-                actionSplashInFragmentToSignInFragment()
-            findNavController(this).navigate(action)
+            view.findNavController().navigate(SplashFragmentDirections.actionSplashFragmentToSignInFragment())
         }, 3500)
     }
 }

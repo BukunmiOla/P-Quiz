@@ -7,6 +7,6 @@ import retrofit2.http.GET
 interface GetDataService {
 
     @GET("/P-Quiz/pythonQuestions.json")
-    fun getAllPosts(): Call<MutableList<PyQuestionsModel?>?>?
+    fun getAllPosts(): Call<MutableList<PyQuestionsModel>>
 
 }

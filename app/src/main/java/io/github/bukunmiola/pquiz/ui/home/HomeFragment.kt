@@ -1,12 +1,12 @@
 package io.github.bukunmiola.pquiz.ui.home
 
-import android.app.ProgressDialog
 import android.os.Bundle
+import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
-import androidx.fragment.app.Fragment
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import io.github.bukunmiola.pquiz.R
@@ -17,49 +17,46 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
+
 class HomeFragment : Fragment() {
-    var customRv: RecyclerView? = null
-    var progressDialog: ProgressDialog? = null
+    private lateinit var customRv: RecyclerView
+    private lateinit var adapter : HomeAdapter
 
-    companion object {
-        fun newInstance() = HomeFragment()
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+
     }
-
-    private lateinit var viewHolder: HomeViewHolder
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.home_fragment, container, false)
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_home, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        customRv = view.findViewById(R.id.questions_rv)
+        customRv = view.findViewById(R.id.categories_rv)
+        customRv.layoutManager = LinearLayoutManager(activity)
         showQuestions()
     }
-
     private fun showQuestions(  ){
-        progressDialog?.setMessage("Loading....")
-        progressDialog?.show()
 
-
-        val service: GetDataService? = QuizClientInstance.getClientInstance()?.create(GetDataService::class.java)
-        service?.getAllPosts()?.enqueue(object : Callback<MutableList<PyQuestionsModel?>?> {
+        val service: GetDataService = QuizClientInstance.getClientInstance().create(GetDataService::class.java)
+        service.getAllPosts().enqueue(object : Callback<MutableList<PyQuestionsModel>> {
             override fun onResponse(
-                call: Call<MutableList<PyQuestionsModel?>?>?,
-                response: Response<MutableList<PyQuestionsModel?>?>?
+                call: Call<MutableList<PyQuestionsModel>>,
+                response: Response<MutableList<PyQuestionsModel>>
             ) {
-                progressDialog?.dismiss()
-                generateQuestions(response?.body())
+                generateQuestions(response.body())
             }
 
             override fun onFailure(
-                call: Call<MutableList<PyQuestionsModel?>?>?,
+                call: Call<MutableList<PyQuestionsModel>>,
                 t: Throwable
             ) {
-                progressDialog?.dismiss()
                 Toast.makeText(
                     activity,
                     "Something went wrong...Please try later!",
@@ -69,11 +66,15 @@ class HomeFragment : Fragment() {
         })
     }
 
-    private fun generateQuestions(questions: MutableList<PyQuestionsModel?>?) {
-        val adapter = questions?.let { QuestionsAdapter(it) }
-        customRv!!.layoutManager = LinearLayoutManager(activity)
-        customRv!!.adapter = adapter
+    private fun generateQuestions(questions: MutableList<PyQuestionsModel>?) {
+        val listener :CategorySelectionListener = object : CategorySelectionListener {
+            override fun onSelectCategory(category: Int) {
+                view?.findNavController()?.navigate(HomeFragmentDirections.actionHomeFragmentToQuestionFragment(category))
+            }
+        }
+        adapter = HomeAdapter()
+        adapter.setQuestionData(questions,listener)
+        customRv.adapter = adapter
     }
-
 
 }

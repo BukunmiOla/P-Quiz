@@ -14,6 +14,10 @@
     <string name="sign_up">SIGN UP</string>
     <string name="login_ready">Already have an account? Login</string>
     <string name="pquiz">PQuiz</string>
+    <string name="quiz_time">Quiz time!</string>
+    <string name="submit">Submit</string>
+    <string name="next">Next</string>
+    <string name="don_t_have_account_yet">Don\'t have account yet? Sign up.</string>
 
     <string-array name="category_array">
         <item>Select topic</item>

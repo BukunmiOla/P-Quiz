@@ -14,7 +14,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="60dp"
         android:layout_marginEnd="20dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
@@ -45,7 +45,7 @@
         android:id="@+id/label"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
+        android:layout_margin="15dp"
         android:text="@string/label"
         android:textAlignment="center"
         android:textStyle="italic"
@@ -53,38 +53,21 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/my_image"/>
 
-    <ScrollView
-        android:id="@+id/inputs"
-        android:layout_width="0dp"
-        android:layout_height="450dp"
-        app:layout_constraintEnd_toEndOf="@+id/label"
-        app:layout_constraintStart_toStartOf="@id/label"
-        app:layout_constraintTop_toBottomOf="@+id/label">
-
-        <LinearLayout
+    <LinearLayout
+            android:id="@+id/inputs"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
-            <TextView
-                style="@style/view"
-                android:layout_width="match_parent"
-                android:layout_margin="10dp"
-                android:paddingStart="20dp"
-                android:paddingEnd="0dp"
-                android:paddingTop="10dp"
-                android:paddingBottom="10dp"
-                android:background="@drawable/label_bg"
-                android:text="@string/personal_details"
-                android:textColor="@color/textColor" />
-
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="@+id/label"
+            app:layout_constraintStart_toStartOf="@id/label"
+            app:layout_constraintTop_toBottomOf="@+id/label">
             <com.google.android.material.textfield.TextInputLayout
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/full_name"
                 android:padding="10dp"
                 app:endIconMode="clear_text"
-                app:hintTextColor="#fff"
                 app:startIconDrawable="@drawable/ic_name_icon">
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -99,13 +82,12 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/email"
                 android:padding="10dp"
                 app:endIconMode="clear_text"
-                app:hintTextColor="#fff"
                 app:startIconDrawable="@drawable/ic_mail">
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -119,34 +101,14 @@
 
             </com.google.android.material.textfield.TextInputLayout>
 
-            <com.google.android.material.textfield.TextInputLayout
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="@string/date_of_birth"
-                android:padding="10dp"
-                app:endIconMode="clear_text"
-                app:hintTextColor="#fff">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/date_of_birth"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/textColor"
-                    android:inputType="date"
-                    android:textSize="16sp" />
-
-
-            </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/password"
                 android:padding="10dp"
                 app:endIconMode="password_toggle"
-                app:hintTextColor="#fff"
                 app:startIconDrawable="@drawable/ic_key">
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -161,13 +123,12 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/confirm_password"
                 android:padding="10dp"
                 app:endIconMode="password_toggle"
-                app:hintTextColor="#fff"
                 app:startIconDrawable="@drawable/ic_key">
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -186,7 +147,7 @@
                 android:id="@+id/button_signUp"
                 style="@style/button"
                 android:layout_width="match_parent"
-                android:layout_marginTop="32dp"
+                android:layout_marginTop="10dp"
                 app:cornerRadius="20dp"
                 app:strokeColor="@color/white"
                 app:strokeWidth="2dp"
@@ -194,12 +155,12 @@
                 android:textColor="@color/white" />
 
         </LinearLayout>
-    </ScrollView>
 
     <TextView
         android:id="@+id/login"
         style="@style/view"
         android:text="@string/login_ready"
+        android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="@id/inputs"
         app:layout_constraintStart_toStartOf="@id/inputs"
         app:layout_constraintTop_toBottomOf="@+id/inputs" />
