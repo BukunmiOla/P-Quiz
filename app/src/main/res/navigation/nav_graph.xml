@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/homeFragment">
+    app:startDestination="@id/splashFragment">
 
 
     <fragment
@@ -67,13 +67,34 @@
     <fragment
         android:id="@+id/questionFragment"
         android:name="io.github.bukunmiola.pquiz.ui.questions.QuestionsFragment"
-        android:label="fragment_home"
+        android:label="fragment_question"
         tools:layout="@layout/questions_fragment" >
 
         <action
             android:id="@+id/action_questionFragment_to_homeFragment"
             app:destination="@id/homeFragment"/>
-        <argument android:name="questions"
+        <action
+            android:id="@+id/action_questionFragment_to_gradeFragment"
+            app:destination="@id/gradeFragment"/>
+        <argument android:name="category_index"
+            app:argType="integer" />
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/gradeFragment"
+        android:name="io.github.bukunmiola.pquiz.ui.questions.GradeFragment"
+        android:label="fragment_grade"
+        tools:layout="@layout/fragment_grade" >
+
+
+        <action
+            android:id="@+id/action_gradeFragment_to_homeFragment"
+            app:destination="@id/homeFragment"/>
+        <argument android:name="score"
+            app:argType="integer" />
+
+        <argument android:name="noOfQuestions"
             app:argType="integer" />
 
 

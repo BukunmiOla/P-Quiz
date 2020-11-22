@@ -18,6 +18,7 @@
     <string name="submit">Submit</string>
     <string name="next">Next</string>
     <string name="don_t_have_account_yet">Don\'t have account yet? Sign up.</string>
+    <string name="quit_quiz">Quit Quiz  </string>
 
     <string-array name="category_array">
         <item>Select topic</item>
